@@ -18,13 +18,13 @@
         <nav style="z-index: 999;">
             <div id="container">
                 <ul>
-                    <li>الرئيسية</li>
-                    <li>الكتب</li>
-                    <li> المخطوطات</li>
-                    <li> المؤلفون</li>
-                    <li> التصنيفات</li>
+                    <li><a href="#">الرئيسية</a></li>
+                    <li><a href="./pages/">الكتب</a></li>
+                    <li><a href="./pages/">المخطوطات</a></li>
+                    <li><a href="./pages/algazely/">المؤلفون</a></li>
+                    <li><a href="./pages/tafseer/">التصنيفات</a></li>
                     <li>من نحن</li>
-                    <li>الاقتراحات</li>
+                    <li><a href="./pages/recommendations/">الاقتراحات</a></li>
                 </ul>
             </div>
         </nav>
@@ -423,10 +423,10 @@
 
          <!-- Authors  -->
 
-         <section>
+         <section id="authors">
            <div class="tittle">
                     <img src="../../assets/left_arrow.png" alt="">
-                    <h2>احدث الاصدارات</h2>
+                    <h2>المؤلفون</h2>
                     <img src="../../assets/right_arrow.png" alt="">
                 </div>
                 <p>تعرف على نخبة من علماء الأمة الإسلامية ومؤلفيها عبر التاريخ</p>
@@ -510,7 +510,7 @@
 
          <!-- subscribtion -->
 
-         <section>
+         <section id="subscribtion">
             <div>
                 <p>
                     <i data-lucide="mail"></i>
@@ -562,10 +562,18 @@
             </section>
         </div>
     </footer>
-    <script>
+    <!-- <script>
         lucide.createIcons();
+        const books = document.querySelectorAll('.book') ;
+        for(let i =0 ; i< books.length ; i++){
+             books[i].addEventListener('click' , function(){
+            location.href = `/pages/prophet_mhmd` ;
+            console.log('test');  
+         })
+        }
+    </script> -->
 
-    </script>
+    <script src="./index.js"></script>
 </body>
 
 </html>
