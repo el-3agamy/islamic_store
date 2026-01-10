@@ -1,0 +1,127 @@
+
+section>strong{
+    color: var(--main-color);
+    background-color: var(--badge-color);
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.tittle{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 50px 20px;
+    gap: 10px;
+}
+#describtion{
+    width: 55%;
+    text-align: center;
+    margin: auto;
+}
+
+.who_we_are_grid{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.div{
+    background-color: #326129;
+    padding: 20px 25px;
+    text-align: center;
+    border-radius: 5px;
+
+}
+.inner_books {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+
+}
+
+
+div section:nth-child(2) {
+    background: linear-gradient(to bottom, var(--first-color-linear-gradient), var(--second-color-linear-gradient));
+    color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+
+}
+
+.our_vision{
+    background-color: var(--page-bg);
+    padding: 100px 0 ;
+}
+
+.our_vision > #container div:nth-child(1){
+    background-color: var(--main-color);
+    padding: 10px;
+    border-radius: 10px;
+}
+.our_vision > #container div:nth-child(2){
+    background-color: var(--main-color);
+    padding: 30px 15px;
+    border-radius: 10px;
+    background-color: #fe9401;
+}
+.our_vision > #container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    
+}
+
+.values > h1 ,.values >  p{
+    text-align: center;
+}
+.values #container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.digitat_library_card{
+    border-top: 2px solid var(--second-color-linear-gradient);
+    background-color: var(--page-bg);
+    padding: 20px 10px;
+    border-radius: 10px;
+}
+
+.last{
+    text-align: center;
+    background-color: #fff8e1;
+    padding: 30px 0;
+}
+.last .btns button:nth-child(1){
+    background-color: var(--badge-color);
+    color: var(--main-color);
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 20px;
+    border: 0;
+
+}
+
+.last .btns button:nth-child(2){
+    background-color: var(--main-color);
+    color: var(--second-color-linear-gradient);
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 20px;
+    border: 0;
+
+
+}
+/* responsive  */
+
+@media (max-width : 768px){
+    
+}
