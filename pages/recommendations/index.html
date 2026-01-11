@@ -24,38 +24,41 @@
         </section>
        
         <!-- form  -->
-         <section>
-            <div>
+         <section class="form_section">
+           <div id="container">
+             <div class="aside">
                 <div>
                     <h4>لماذا نطلب اقتراحاتك؟</h4>
                     <ul>
-                        <li> <i data-lucide="right"></i>تحسين تجربة المستخدم</li>
-                        <li>إضافة كتب ومؤلفين جدد <i data-lucide="right"></i></li>
-                        <li>تطوير خدمات جديدة <i data-lucide="right"></i></li>
-                        <li>حل المشاكل التقنية <i data-lucide="right"></i></li>
+                        <li> <i data-lucide="circle-check-big"></i>تحسين تجربة المستخدم</li>
+                        <li> <i data-lucide="circle-check-big"></i>إضافة كتب ومؤلفين جدد  </li>
+                        <li> <i data-lucide="circle-check-big"></i>تطوير خدمات جديدة  </li>
+                        <li> <i data-lucide="circle-check-big"></i>حل المشاكل التقنية </li>
                     </ul>
                     
                 </div>
                 <div>
-                    <i data-lucide="window"></i><br>
+                    <i  data-lucide="message-square"></i><br>
                     <p><strong>نستمع إليك</strong> <br>
                         كل اقتراح وملاحظة نتلقاها يتم
                         <br> دراستها بعناية من قبل فريقنا المختص
                     </p>
                 </div>
             </div>
-           <div>
-             <form action="">
-                <div>
-                    <label for="full_name"><i data-lucide="person"></i>الاسم الكامل</label>
+           <div class="form_wraper">
+               <form action="">
+                 <h4>نموذج الاقتراحات</h4>
+                <div class="input">
+                    <label for="full_name"><i data-lucide="user"></i>الاسم الكامل</label>
                     <input  id="full_name" type="text">
                 </div>
-                <div>
-                    <label for="email"><i data-lucide="email"></i> البريد الإلكتروني</label>
+                <div class="input">
+                    <label for="email"><i data-lucide="mail"></i> البريد الإلكتروني</label>
+                    <input type="email">
                 </div>
-                <div>
-                    <label for="user_suggestion"><i data-lucide=""></i>الاقتراح أو الملاحظة</label>
-                    <textarea name="" id="user_suggestion"></textarea>
+                <div class="input">
+                    <label for="user_suggestion"><i data-lucide="message-square"></i>الاقتراح أو الملاحظة</label>
+                    <textarea name="" id="user_suggestion" ></textarea>
                 </div>
                 <button type="submit">
                     <i data-lucide="send"> </i>إرسال الاقتراح
@@ -67,12 +70,13 @@
                         <p><strong>500+</strong> <br>اقتراح تم تنفيذه</p>
                     </div>
                     <div>
-                        <p><strong>1200+</strong>مستخدم شارك رأيه</p>
+                        <p><strong>1200+</strong><br> مستخدم شارك رأيه</p>
                     </div>
                     <div>
-                        <p><strong>98%</strong>رضا المستخدمين</p>
+                        <p><strong>98%</strong><br> رضا المستخدمين</p>
                     </div>
             </div>
+           </div>
            </div>
 
          </section>
@@ -102,6 +106,10 @@
             </div>
         </footer>
     </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
     
 </body>
 </html>

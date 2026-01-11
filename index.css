@@ -8,6 +8,8 @@
     --author-color: #3B865F;
     --icons-background: #2a5621;
     --page-bg: #F5F5F0;
+    --main-section-padding : 70px ;
+    --recommendation-main-color : #364153 ;
 }
 
 * {
@@ -139,9 +141,14 @@ main #stats p span {
 
 /*  */
 
+
 .grid_books {
     background-color: var(--page-bg);
-
+    padding: var(--main-section-padding) 0;
+     
+}
+.new_versions , .most_selling{
+    background-color: var(--main-color) ;
 }
 
 .book {
@@ -294,6 +301,14 @@ main #stats p span {
     padding: 50px;
 }
 
+#subscribtion [data-lucide="mail"]  {
+    padding: 20px;
+    background-color: var(--badge-color);
+    border-radius: 50%;
+    border: 0;
+    color: var(--main-color);
+}
+
 /* footer */
 footer {
     background: linear-gradient(to bottom, var(--first-color-linear-gradient), var(--second-color-linear-gradient));
@@ -391,13 +406,10 @@ footer #copy_rights {
         padding: 10px 20px;
         border-radius: 25px;
         position: relative;
+        width: 100%;
     }
 
-    /* We need to restructure HTML slightly for this to work perfectly, 
-       but assuming we keep the UL, we will control it here.
-       Currently nav ul has the background. We might need to move it in HTML changes.
-       For now, let's just target assuming HTML updates.
-    */
+ 
 
     .burger-icon {
         display: block;
@@ -444,7 +456,9 @@ footer #copy_rights {
         align-items: center;
         justify-content: center;
     }
-
+    footer>#container section:nth-child(1){
+    padding: 0 !important;
+}
     #contacts ul {
         padding: 0;
     }
