@@ -59,3 +59,42 @@ const swiper = new Swiper('.books-swiper', {
     },
   },
 });
+
+// Categories Swiper
+const categoriesSwiper = new Swiper('.categories-swiper', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 4,
+    },
+  },
+});
+
+// Authors Swiper
+const authorsSwiper = new Swiper('.authors-swiper', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
+});
