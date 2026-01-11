@@ -15,7 +15,6 @@ if (burgerToggle && navMenu) {
 for (let i = 0; i < books.length; i++) {
   books[i].addEventListener('click', function () {
     location.href = `/pages/prophet_mhmd`;
-    console.log('test');
   })
 }
 

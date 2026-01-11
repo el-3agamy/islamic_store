@@ -72,8 +72,8 @@ section>strong {
 
 
 .book_details {
-    flex: 1.2;
     display: flex;
+    flex: 1.2;
     flex-direction: column;
     gap: 25px;
     background-color: transparent;
