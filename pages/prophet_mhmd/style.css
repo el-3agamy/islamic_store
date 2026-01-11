@@ -64,7 +64,7 @@ section>strong {
 }
 
 /* Book Image Styling */
-.book_image {
+#book_review .book_image {
     flex: 1;
     max-width: 450px;
     background: #fff;
@@ -74,7 +74,7 @@ section>strong {
     border: 1px solid #f0f0f0;
 }
 
-.book_image img {
+#book_review .book_image img {
     width: 100%;
     height: auto;
     border-radius: 5px;
@@ -82,7 +82,7 @@ section>strong {
 }
 
 /* Book Details Styling */
-.book_details {
+#book_review .book_details {
     flex: 1.2;
     display: flex;
     flex-direction: column;
@@ -92,14 +92,14 @@ section>strong {
     padding: 0;
 }
 
-.header_info h1 {
+#book_review .header_info h1 {
     color: #1a4d3a;
     font-size: 42px;
     font-weight: 800;
     margin-bottom: 5px;
 }
 
-.header_info .author {
+#book_review .header_info .author {
     color: #558b7a;
     font-size: 20px;
     margin-bottom: 12px;
