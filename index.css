@@ -2,19 +2,19 @@
     --first-color-linear-gradient: #1D690E;
     --second-color-linear-gradient: #193314;
     --back-to-home-bg: #FF9800;
-    --price-color : #FF9800 ;
-    --badge-color : #FF9800 ;
-    --main-color : #fff ;
-    --author-color : #3B865F ;
-    --icons-background :#2a5621 ;
-    --page-bg : #F5F5F0 ;
+    --price-color: #FF9800;
+    --badge-color: #FF9800;
+    --main-color: #fff;
+    --author-color: #3B865F;
+    --icons-background: #2a5621;
+    --page-bg: #F5F5F0;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
 
 body {
@@ -22,28 +22,31 @@ body {
 
 }
 
-#container{
+#container {
     width: 80%;
     margin: auto;
-    padding : 30px 0 ;
+    padding: 30px 0;
 }
+
 ul {
     list-style: none;
-    color:var(--main-color);
+    color: var(--main-color);
 }
 
 
-header{
+header {
     max-height: 100vh;
 }
+
 /* navbar */
 
-nav{
-    position: fixed ;
+nav {
+    position: fixed;
     width: 100%;
 }
-nav ul{
-    background: linear-gradient(to left , var(--first-color-linear-gradient) , var(--second-color-linear-gradient));
+
+nav .nav-container {
+    background: linear-gradient(to left, var(--first-color-linear-gradient), var(--second-color-linear-gradient));
     width: 85%;
     margin: auto;
     display: flex;
@@ -51,79 +54,92 @@ nav ul{
     align-items: center;
     padding: 10px 20px;
     border-radius: 25px;
-
 }
-nav  ul li a {
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+}
+
+nav ul li a {
     text-decoration: none;
     color: var(--main-color);
     transition: all 0.5s;
 }
-nav  ul li a:hover{
+
+nav ul li a:hover {
     text-decoration: none;
     color: var(--price-color);
     border-bottom: 2px solid var(--price-color);
 }
+
 /* hero section */
 
-main{
-    background: linear-gradient(to right , var(--first-color-linear-gradient) , var(--second-color-linear-gradient)) 
-    , 
-    url(./assets/background_image.png)
-    ;
+main {
+    background: linear-gradient(to right, var(--first-color-linear-gradient), var(--second-color-linear-gradient)),
+        url(./assets/background_image.png);
     text-align: center;
     color: var(--main-color);
     padding: 70px 0 0 0;
-   
+
 }
 
 
- main #container{
-     display: flex;
+main #container {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     row-gap: 10px;
- }
-main #main_content button{
+}
+
+main #main_content button {
     color: var(--main-color);
     padding: 10px;
     border: 1px solid #fff;
     border-radius: 10px;
     background-color: var(--badge-color);
 }
- main #stats{
+
+main #stats {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
- }
- main #main_content button{
+}
+
+main #main_content button {
     margin-top: 15px;
- }
+}
 
 main #main_content a {
-     display: flex;
-     justify-content: space-between;
-     gap: 10px;
-     align-items: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
     text-decoration: none;
     color: var(--main-color);
     font-size: 20px;
- }
- main #stats p{
+}
+
+main #stats p {
     color: var(--badge-color);
     font-size: 48px;
     font-weight: 700;
- }
- main #stats p span{
-    color:var(--main-color);
-     font-size: 18px;
+}
+
+main #stats p span {
+    color: var(--main-color);
+    font-size: 18px;
     font-weight: 300;
- }
+}
 
- /*  */
+/*  */
 
- .grid_books {
+.grid_books {
     background-color: var(--page-bg);
 
 }
@@ -133,6 +149,7 @@ main #main_content a {
     box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
     cursor: pointer;
+    /* width: 100%; */
 }
 
 .book div:nth-child(1) {
@@ -181,7 +198,8 @@ main #main_content a {
     gap: 30px;
 
 }
-.tittle{
+
+.tittle {
     display: flex;
     justify-content: start;
     align-items: center;
@@ -190,16 +208,18 @@ main #main_content a {
 }
 
 /* categories of books */
-.categories_cards{
-    background:linear-gradient(to bottom  , var(--first-color-linear-gradient) , var(--second-color-linear-gradient));
+.categories_cards {
+    background: linear-gradient(to bottom, var(--first-color-linear-gradient), var(--second-color-linear-gradient));
     padding: 40px 0;
 }
 
-.categories_cards > h2 , .categories_cards > p{
+.categories_cards>h2,
+.categories_cards>p {
     color: var(--main-color);
     text-align: center;
 }
-.categories_cards > #container{
+
+.categories_cards>#container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -207,7 +227,7 @@ main #main_content a {
     gap: 20px;
 }
 
-.categories_cards #container > .category_card{
+.categories_cards #container>.category_card {
     background-color: var(--main-color);
     width: 23%;
     border: 1px solid #995c5c;
@@ -218,16 +238,19 @@ main #main_content a {
 }
 
 /* authors */
-#authors{
-    padding: 50px 0 ;
+#authors {
+    padding: 50px 0;
 }
+
 #authors .tittle {
     justify-content: center;
 }
-#authors>p{
+
+#authors>p {
     text-align: center;
 }
-.authors_grid{
+
+.authors_grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -235,9 +258,9 @@ main #main_content a {
     gap: 20px;
 }
 
-.auther_card{
+.auther_card {
     width: 30%;
-    background: linear-gradient(to bottom , var(--page-bg) , var(--main-color));
+    background: linear-gradient(to bottom, var(--page-bg), var(--main-color));
     border-right: 2px solid var(--first-color-linear-gradient);
     border-radius: 10px;
     padding: 20px 10px;
@@ -245,19 +268,21 @@ main #main_content a {
 }
 
 /* subscribtion */
-#subscribtion{
+#subscribtion {
     text-align: center;
     background-color: #fff8e1;
     padding: 50px;
 }
+
 /* footer */
 footer {
-    background: linear-gradient(to bottom , var(--first-color-linear-gradient) , var(--second-color-linear-gradient) );
+    background: linear-gradient(to bottom, var(--first-color-linear-gradient), var(--second-color-linear-gradient));
     color: var(--main-color);
 
 }
-footer #container{
-     display: flex;
+
+footer #container {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     /* align-items: center; */
@@ -269,21 +294,23 @@ footer section {
     display: flex;
     justify-content: start;
     align-items: center;
-    
+
 }
 
-#contacts , #logo{
+#contacts,
+#logo {
     flex-grow: 1;
     /* width: 100%; */
 }
+
 #contacts ul li {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
 }
 
-#contacts ul li svg{
+#contacts ul li svg {
     width: 30px;
     height: 30px;
     border: 1px solid #fff;
@@ -291,23 +318,129 @@ footer section {
     padding: 5px;
     background-color: var(--icons-background);
 }
+
 /* #contacts ul li:nth-child(1) {
     text-align: left;
     direction: ltr;
 } */
 
- footer #copy_rights{
+footer #copy_rights {
     margin: auto;
- }
+}
 
 
- /* Media Query --> Responsive */
+/* Media Query --> Responsive */
 
- @media (max-width : 768px){
+.grid_books #container {
+    position: relative;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: var(--badge-color) !important;
+    color: var(--main-color) !important;
+    width: 35px !important;
+    height: 35px !important;
+    border-radius: 50%;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 16px !important;
+    font-weight: bold;
+}
+
+/* Burger Menu Icon */
+.burger-icon {
+    display: none;
+    cursor: pointer;
+    color: var(--main-color);
+}
+
+/* Media Query --> Responsive */
+
+@media (max-width : 768px) {
+
+    /* Navbar Responsiveness */
+    nav .nav-container {
+        flex-direction: row-reverse;
+        /* Align logo/burger if needed, or just standard */
+        justify-content: space-between;
+        align-items: center;
+        background: linear-gradient(to left, var(--first-color-linear-gradient), var(--second-color-linear-gradient));
+        padding: 10px 20px;
+        border-radius: 25px;
+        position: relative;
+    }
+
+    /* We need to restructure HTML slightly for this to work perfectly, 
+       but assuming we keep the UL, we will control it here.
+       Currently nav ul has the background. We might need to move it in HTML changes.
+       For now, let's just target assuming HTML updates.
+    */
+
+    .burger-icon {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        /* Hidden by default */
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        background: transparent;
+        /* inherited from container */
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    /* Hero resizing */
+    main #stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Categories */
+    .categories_cards #container>.category_card {
+        width: 45%;
+        /* Two per row on tablet/mobile */
+    }
+
+    /* Authors */
+    .auther_card {
+        width: 45%;
+    }
+
     footer section {
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
 
- }
+    #contacts ul {
+        padding: 0;
+    }
+
+    #contacts ul li {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .categories_cards #container>.category_card {
+        width: 90%;
+        /* Full width on very small screens */
+    }
+
+    .auther_card {
+        width: 90%;
+    }
+}

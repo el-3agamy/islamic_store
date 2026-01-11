@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
     <title>Document</title>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="./index.css">
     <!-- Lucide Icons  -->
+
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
@@ -17,526 +21,794 @@
         <!-- navbar -->
         <nav style="z-index: 999;">
             <div id="container">
-                <ul>
-                    <li><a href="#">الرئيسية</a></li>
-                    <li><a href="./pages/">الكتب</a></li>
-                    <li><a href="./pages/">المخطوطات</a></li>
-                    <li><a href="./pages/algazely/">المؤلفون</a></li>
-                    <li><a href="./pages/tafseer/">التصنيفات</a></li>
-                    <li>من نحن</li>
-                    <li><a href="./pages/recommendations/">الاقتراحات</a></li>
-                </ul>
+                <div class="nav-container">
+                    <i data-lucide="menu" class="burger-icon" id="burger-toggle"></i>
+                    <ul id="nav-menu">
+                        <li><a href="#">الرئيسية</a></li>
+                        <li><a href="./pages/">الكتب</a></li>
+                        <li><a href="./pages/">المخطوطات</a></li>
+                        <li><a href="./pages/algazely/">المؤلفون</a></li>
+                        <li><a href="./pages/tafseer/">التصنيفات</a></li>
+                        <li>من نحن</li>
+                        <li><a href="./pages/recommendations/">الاقتراحات</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
-       <main>
-         <div id="container">
-            <div id="logo">
-                <img src="./assets/logo.png" width="100%" alt="">
-            </div>
-            <div id="main_content">   
+        <main>
+            <div id="container">
+                <div id="logo">
+                    <img src="./assets/logo.png" width="100%" alt="">
+                </div>
+                <div id="main_content">
 
-                <p>اكتشف كنوز التراث الإسلامي <br>
-                    آلاف الكتب والمخطوطات النادرة في مكتبة رقمية شاملة <br>
-                    متاحة للجميع في أي وقت ومن أي مكان
-                </p>
-                <button>   <a href="#">ابدأ القراءة <i data-lucide="star"></i></a></button>
+                    <p>اكتشف كنوز التراث الإسلامي <br>
+                        آلاف الكتب والمخطوطات النادرة في مكتبة رقمية شاملة <br>
+                        متاحة للجميع في أي وقت ومن أي مكان
+                    </p>
+                    <button> <a href="#">ابدأ القراءة <i data-lucide="star"></i></a></button>
 
+                </div>
+                <div id="stats">
+                    <p>+٥٠ <br>
+                        <span>تصنيف علمي</span>
+                    </p>
+                    <p>+٣٠٠ <br>
+                        <span>مؤلف وعالم</span>
+                    </p>
+                    <p>+٥٠٠٠ <br>
+                        <span>كتاب ومخطوطة</span>
+                    </p>
+                </div>
             </div>
-            <div id="stats">
-                <p>+٥٠ <br> 
-                    <span>تصنيف علمي</span>
-                </p>
-                <p>+٣٠٠ <br>
-                    <span>مؤلف وعالم</span>
-                </p>
-                <p>+٥٠٠٠ <br>
-                <span>كتاب ومخطوطة</span>
-            </p>
-            </div>
-        </div>
-       </main>
+        </main>
     </header>
 
     <!--  -->
 
     <section class="grid_books" style="padding-top: 90px;">
-            <div id="container">
+        <div id="container">
 
-                <div class="tittle">
-                    <img src="../../assets/left_arrow.png" alt="">
-                    <h2>الاكثر مبيعا</h2>
-                    <img src="../../assets/right_arrow.png" alt="">
-                </div>
-
-                <div class="inner_books">
-                    <div class="book">
-                        <div>
-                            <img src="../../assets/available_books/0ef567450a16427da4829b98ad3d2e742f577dd5.jpg"
-                                width="100%" alt="">
-                        </div>
-                        <div class="book_details">
-                            <h4>التفسير الكبير</h4>
-                            <h5>فخر الدين الرازي</h5>
-                            <h6>120 جنيه مصري</h6>
-                        </div>
-                        <div class="badge">التفسير</div>
-                    </div>
-                    <div class="book">
-                        <div>
-                            <img src="../../assets/available_books/4c03f5ce154c4d1d2c98b9fcbbc2fbbdf9bf7584.jpg"
-                                width="100%" alt="">
-                        </div>
-                        <div class="book_details">
-                            <h4>التفسير الكبير</h4>
-                            <h5>فخر الدين الرازي</h5>
-                            <h6>120 جنيه مصري</h6>
-                        </div>
-                        <div class="badge">التفسير</div>
-                    </div>
-                    <div class="book">
-                        <div>
-                            <img src="../../assets/available_books/d120449ab330dffaafec3652f6a7f97be7c31081.jpg"
-                                width="100%" alt="">
-                        </div>
-                        <div class="book_details">
-                            <h4>التفسير الكبير</h4>
-                            <h5>فخر الدين الرازي</h5>
-                            <h6>120 جنيه مصري</h6>
-                        </div>
-                        <div class="badge">التفسير</div>
-                    </div>
-                    <div class="book">
-                        <div>
-                            <img src="../../assets/available_books/4c03f5ce154c4d1d2c98b9fcbbc2fbbdf9bf7584.jpg"
-                                width="100%" alt="">
-                        </div>
-                        <div class="book_details">
-                            <h4>التفسير الكبير</h4>
-                            <h5>فخر الدين الرازي</h5>
-                            <h6>120 جنيه مصري</h6>
-                        </div>
-                        <div class="badge">التفسير</div>
-                    </div>
-                  
-                    </div>
-                </div>
-
-        </section>
-    <section class="grid_books">
-            <div id="container">
-
-                <div class="tittle">
-                    <img src="../../assets/left_arrow.png" alt="">
-                    <h2>الكتب المخفضه</h2>
-                    <img src="../../assets/right_arrow.png" alt="">
-                </div>
-
-                <div class="inner_books">
-                    <div class="book">
-                        <div>
-                            <img src="../../assets/available_books/0ef567450a16427da4829b98ad3d2e742f577dd5.jpg"
-                                width="100%" alt="">
-                        </div>
-                        <div class="book_details">
-                            <h4>التفسير الكبير</h4>
-                            <h5>فخر الدين الرازي</h5>
-                            <h6>120 جنيه مصري</h6>
-                        </div>
-                        <div class="badge">التفسير</div>
-                    </div>
-                    <div class="book">
-                        <div>
-                            <img src="../../assets/available_books/4c03f5ce154c4d1d2c98b9fcbbc2fbbdf9bf7584.jpg"
-                                width="100%" alt="">
-                        </div>
-                        <div class="book_details">
-                            <h4>التفسير الكبير</h4>
-                            <h5>فخر الدين الرازي</h5>
-                            <h6>120 جنيه مصري</h6>
-                        </div>
-                        <div class="badge">التفسير</div>
-                    </div>
-                    <div class="book">
-                        <div>
-                            <img src="../../assets/available_books/d120449ab330dffaafec3652f6a7f97be7c31081.jpg"
-                                width="100%" alt="">
-                        </div>
-                        <div class="book_details">
-                            <h4>التفسير الكبير</h4>
-                            <h5>فخر الدين الرازي</h5>
-                            <h6>120 جنيه مصري</h6>
-                        </div>
-                        <div class="badge">التفسير</div>
-                    </div>
-                    <div class="book">
-                        <div>
-                            <img src="../../assets/available_books/4c03f5ce154c4d1d2c98b9fcbbc2fbbdf9bf7584.jpg"
-                                width="100%" alt="">
-                        </div>
-                        <div class="book_details">
-                            <h4>التفسير الكبير</h4>
-                            <h5>فخر الدين الرازي</h5>
-                            <h6>120 جنيه مصري</h6>
-                        </div>
-                        <div class="badge">التفسير</div>
-                    </div>
-                  
-                    </div>
-                </div>
-
-        </section>
-    <section class="grid_books">
-            <div id="container">
-
-                <div class="tittle">
-                    <img src="../../assets/left_arrow.png" alt="">
-                    <h2>احدث الاصدارات</h2>
-                    <img src="../../assets/right_arrow.png" alt="">
-                </div>
-
-                <div class="inner_books">
-                    <div class="book">
-                        <div>
-                            <img src="../../assets/available_books/0ef567450a16427da4829b98ad3d2e742f577dd5.jpg"
-                                width="100%" alt="">
-                        </div>
-                        <div class="book_details">
-                            <h4>التفسير الكبير</h4>
-                            <h5>فخر الدين الرازي</h5>
-                            <h6>120 جنيه مصري</h6>
-                        </div>
-                        <div class="badge">التفسير</div>
-                    </div>
-                    <div class="book">
-                        <div>
-                            <img src="../../assets/available_books/4c03f5ce154c4d1d2c98b9fcbbc2fbbdf9bf7584.jpg"
-                                width="100%" alt="">
-                        </div>
-                        <div class="book_details">
-                            <h4>التفسير الكبير</h4>
-                            <h5>فخر الدين الرازي</h5>
-                            <h6>120 جنيه مصري</h6>
-                        </div>
-                        <div class="badge">التفسير</div>
-                    </div>
-                    <div class="book">
-                        <div>
-                            <img src="../../assets/available_books/d120449ab330dffaafec3652f6a7f97be7c31081.jpg"
-                                width="100%" alt="">
-                        </div>
-                        <div class="book_details">
-                            <h4>التفسير الكبير</h4>
-                            <h5>فخر الدين الرازي</h5>
-                            <h6>120 جنيه مصري</h6>
-                        </div>
-                        <div class="badge">التفسير</div>
-                    </div>
-                    <div class="book">
-                        <div>
-                            <img src="../../assets/available_books/4c03f5ce154c4d1d2c98b9fcbbc2fbbdf9bf7584.jpg"
-                                width="100%" alt="">
-                        </div>
-                        <div class="book_details">
-                            <h4>التفسير الكبير</h4>
-                            <h5>فخر الدين الرازي</h5>
-                            <h6>120 جنيه مصري</h6>
-                        </div>
-                        <div class="badge">التفسير</div>
-                    </div>
-                  
-                    </div>
-                </div>
-
-        </section>
-    <section class="grid_books">
-            <div id="container">
-
-                <div class="tittle">
-                    <img src="../../assets/left_arrow.png" alt="">
-                    <h2>إصدارات جديدة</h2>
-                    <img src="../../assets/right_arrow.png" alt="">
-                </div>
-
-                <div class="inner_books">
-                    <div class="book">
-                        <div>
-                            <img src="../../assets/available_books/0ef567450a16427da4829b98ad3d2e742f577dd5.jpg"
-                                width="100%" alt="">
-                        </div>
-                        <div class="book_details">
-                            <h4>التفسير الكبير</h4>
-                            <h5>فخر الدين الرازي</h5>
-                            <h6>120 جنيه مصري</h6>
-                        </div>
-                        <div class="badge">التفسير</div>
-                    </div>
-                    <div class="book">
-                        <div>
-                            <img src="../../assets/available_books/4c03f5ce154c4d1d2c98b9fcbbc2fbbdf9bf7584.jpg"
-                                width="100%" alt="">
-                        </div>
-                        <div class="book_details">
-                            <h4>التفسير الكبير</h4>
-                            <h5>فخر الدين الرازي</h5>
-                            <h6>120 جنيه مصري</h6>
-                        </div>
-                        <div class="badge">التفسير</div>
-                    </div>
-                    <div class="book">
-                        <div>
-                            <img src="../../assets/available_books/d120449ab330dffaafec3652f6a7f97be7c31081.jpg"
-                                width="100%" alt="">
-                        </div>
-                        <div class="book_details">
-                            <h4>التفسير الكبير</h4>
-                            <h5>فخر الدين الرازي</h5>
-                            <h6>120 جنيه مصري</h6>
-                        </div>
-                        <div class="badge">التفسير</div>
-                    </div>
-                    <div class="book">
-                        <div>
-                            <img src="../../assets/available_books/4c03f5ce154c4d1d2c98b9fcbbc2fbbdf9bf7584.jpg"
-                                width="100%" alt="">
-                        </div>
-                        <div class="book_details">
-                            <h4>التفسير الكبير</h4>
-                            <h5>فخر الدين الرازي</h5>
-                            <h6>120 جنيه مصري</h6>
-                        </div>
-                        <div class="badge">التفسير</div>
-                    </div>
-                  
-                    </div>
-                </div>
-
-        </section>
-
-        <!-- books' categories  -->
-         <section class="categories_cards">
-            <h2>أقسام الكتب</h2>
-            <p>استكشف مكتبتنا الشاملة من الكتب الإسلامية عبر مختلف الأقسام والتخصصات</p>
-            <div  id="container">
-                <div class="category_card">
-                    <i data-lucide="book"></i>
-                    <h5>الفقه</h5>
-                    <p>كتب الفقه الإسلامي والأحكام الشرعية</p>
-                    <hr>
-                    <div>
-                        <span>عدد الكتب</span>
-                        <span>245</span>
-                    </div>
-                </div>
-
-            
-            
-                <div class="category_card">
-                    <i data-lucide="book"></i>
-                    <h5>الحديث</h5>
-                    <p>كتب الحديث النبوي الشريف</p>
-                    <hr>
-                    <div>
-                        <span>عدد الكتب</span>
-                        <span>189</span>
-                    </div>
-                </div>
-
-           
-            
-                <div class="category_card">
-                    <i data-lucide="book"></i>
-                    <h5>التفسير</h5>
-                    <p>كتب تفسير القرآن الكريم</p>
-                    <hr>
-                    <div>
-                        <span>عدد الكتب</span>
-                        <span>156</span>
-                    </div>
-                </div>
-
-          
-            
-                <div class="category_card">
-                    <i data-lucide="book"></i>
-                    <h5>العقيدة</h5>
-                    <p>كتب العقيدة والتوحيد</p>
-                    <hr>
-                    <div>
-                        <span>عدد الكتب</span>
-                        <span>134</span>
-                    </div>
-                </div>
-
-            
-            
-                <div class="category_card">
-                    <i data-lucide="book"></i>
-                    <h5>السيرة</h5>
-                    <p>كتب السيرة النبوية والتاريخ الإسلامي</p>
-                    <hr>
-                    <div>
-                        <span>عدد الكتب</span>
-                        <span>198</span>
-                    </div>
-                </div>
-
-          
-            
-                <div class="category_card">
-                    <i data-lucide="book"></i>
-                    <h5>أصول الفقه</h5>
-                    <p>كتب أصول الفقه والقواعد الفقهية</p>
-                    <hr>
-                    <div>
-                        <span>عدد الكتب</span>
-                        <span>112</span>
-                    </div>
-                </div>
-
-            
-                <div class="category_card">
-                    <i data-lucide="book"></i>
-                    <h5>المخطوطات</h5>
-                    <p>المخطوطات النادرة والتراث الإسلامي</p>
-                    <hr>
-                    <div>
-                        <span>عدد الكتب</span>
-                        <span>87</span>
-                    </div>
-                </div>
-
-           
-           
-                <div class="category_card">
-                    <i data-lucide="book"></i>
-                    <h5>تراجم العلماء</h5>
-                    <p>كتب التراجم وسير العلماء</p>
-                    <hr>
-                    <div>
-                        <span>عدد الكتب</span>
-                        <span>94</span>
-                    </div>
-                </div>
-
+            <div class="tittle">
+                <img src="../../assets/left_arrow.png" alt="">
+                <h2>الاكثر مبيعا</h2>
+                <img src="../../assets/right_arrow.png" alt="">
             </div>
-         </section>
 
-         <!-- Authors  -->
-
-         <section id="authors">
-           <div class="tittle">
-                    <img src="../../assets/left_arrow.png" alt="">
-                    <h2>المؤلفون</h2>
-                    <img src="../../assets/right_arrow.png" alt="">
+            <div class="inner_books swiper books-swiper" style="position: relative;">
+                <div class="swiper-wrapper">
+                    <!-- Books repeated 3 times for carousel effect -->
+                    <!-- Batch 1 -->
+                    <div class="book swiper-slide">
+                        <div>
+                            <img src="../../assets/available_books/0ef567450a16427da4829b98ad3d2e742f577dd5.jpg"
+                                width="100%" alt="">
+                        </div>
+                        <div class="book_details">
+                            <h4>التفسير الكبير</h4>
+                            <h5>فخر الدين الرازي</h5>
+                            <h6>120 جنيه مصري</h6>
+                        </div>
+                        <div class="badge">التفسير</div>
+                    </div>
+                    <div class="book swiper-slide">
+                        <div>
+                            <img src="../../assets/available_books/4c03f5ce154c4d1d2c98b9fcbbc2fbbdf9bf7584.jpg"
+                                width="100%" alt="">
+                        </div>
+                        <div class="book_details">
+                            <h4>التفسير الكبير</h4>
+                            <h5>فخر الدين الرازي</h5>
+                            <h6>120 جنيه مصري</h6>
+                        </div>
+                        <div class="badge">التفسير</div>
+                    </div>
+                    <div class="book swiper-slide">
+                        <div>
+                            <img src="../../assets/available_books/d120449ab330dffaafec3652f6a7f97be7c31081.jpg"
+                                width="100%" alt="">
+                        </div>
+                        <div class="book_details">
+                            <h4>التفسير الكبير</h4>
+                            <h5>فخر الدين الرازي</h5>
+                            <h6>120 جنيه مصري</h6>
+                        </div>
+                        <div class="badge">التفسير</div>
+                    </div>
+                    <div class="book swiper-slide">
+                        <div>
+                            <img src="../../assets/available_books/4c03f5ce154c4d1d2c98b9fcbbc2fbbdf9bf7584.jpg"
+                                width="100%" alt="">
+                        </div>
+                        <div class="book_details">
+                            <h4>التفسير الكبير</h4>
+                            <h5>فخر الدين الرازي</h5>
+                            <h6>120 جنيه مصري</h6>
+                        </div>
+                        <div class="badge">التفسير</div>
+                    </div>
+                    <!-- Batch 2 -->
+                    <div class="book swiper-slide">
+                        <div>
+                            <img src="../../assets/available_books/0ef567450a16427da4829b98ad3d2e742f577dd5.jpg"
+                                width="100%" alt="">
+                        </div>
+                        <div class="book_details">
+                            <h4>التفسير الكبير</h4>
+                            <h5>فخر الدين الرازي</h5>
+                            <h6>120 جنيه مصري</h6>
+                        </div>
+                        <div class="badge">التفسير</div>
+                    </div>
+                    <div class="book swiper-slide">
+                        <div>
+                            <img src="../../assets/available_books/4c03f5ce154c4d1d2c98b9fcbbc2fbbdf9bf7584.jpg"
+                                width="100%" alt="">
+                        </div>
+                        <div class="book_details">
+                            <h4>التفسير الكبير</h4>
+                            <h5>فخر الدين الرازي</h5>
+                            <h6>120 جنيه مصري</h6>
+                        </div>
+                        <div class="badge">التفسير</div>
+                    </div>
+                    <div class="book swiper-slide">
+                        <div>
+                            <img src="../../assets/available_books/d120449ab330dffaafec3652f6a7f97be7c31081.jpg"
+                                width="100%" alt="">
+                        </div>
+                        <div class="book_details">
+                            <h4>التفسير الكبير</h4>
+                            <h5>فخر الدين الرازي</h5>
+                            <h6>120 جنيه مصري</h6>
+                        </div>
+                        <div class="badge">التفسير</div>
+                    </div>
+                    <div class="book swiper-slide">
+                        <div>
+                            <img src="../../assets/available_books/4c03f5ce154c4d1d2c98b9fcbbc2fbbdf9bf7584.jpg"
+                                width="100%" alt="">
+                        </div>
+                        <div class="book_details">
+                            <h4>التفسير الكبير</h4>
+                            <h5>فخر الدين الرازي</h5>
+                            <h6>120 جنيه مصري</h6>
+                        </div>
+                        <div class="badge">التفسير</div>
+                    </div>
+                    <!-- Batch 3 -->
+                    <div class="book swiper-slide">
+                        <div>
+                            <img src="../../assets/available_books/0ef567450a16427da4829b98ad3d2e742f577dd5.jpg"
+                                width="100%" alt="">
+                        </div>
+                        <div class="book_details">
+                            <h4>التفسير الكبير</h4>
+                            <h5>فخر الدين الرازي</h5>
+                            <h6>120 جنيه مصري</h6>
+                        </div>
+                        <div class="badge">التفسير</div>
+                    </div>
+                    <div class="book swiper-slide">
+                        <div>
+                            <img src="../../assets/available_books/4c03f5ce154c4d1d2c98b9fcbbc2fbbdf9bf7584.jpg"
+                                width="100%" alt="">
+                        </div>
+                        <div class="book_details">
+                            <h4>التفسير الكبير</h4>
+                            <h5>فخر الدين الرازي</h5>
+                            <h6>120 جنيه مصري</h6>
+                        </div>
+                        <div class="badge">التفسير</div>
+                    </div>
+                    <div class="book swiper-slide">
+                        <div>
+                            <img src="../../assets/available_books/d120449ab330dffaafec3652f6a7f97be7c31081.jpg"
+                                width="100%" alt="">
+                        </div>
+                        <div class="book_details">
+                            <h4>التفسير الكبير</h4>
+                            <h5>فخر الدين الرازي</h5>
+                            <h6>120 جنيه مصري</h6>
+                        </div>
+                        <div class="badge">التفسير</div>
+                    </div>
+                    <div class="book swiper-slide">
+                        <div>
+                            <img src="../../assets/available_books/4c03f5ce154c4d1d2c98b9fcbbc2fbbdf9bf7584.jpg"
+                                width="100%" alt="">
+                        </div>
+                        <div class="book_details">
+                            <h4>التفسير الكبير</h4>
+                            <h5>فخر الدين الرازي</h5>
+                            <h6>120 جنيه مصري</h6>
+                        </div>
+                        <div class="badge">التفسير</div>
+                    </div>
                 </div>
-                <p>تعرف على نخبة من علماء الأمة الإسلامية ومؤلفيها عبر التاريخ</p>
-
-                <div class="authors_grid" id="container">
-                    <div class="auther_card">
-                        <h4>الإمام محمد بن إسماعيل البخاري</h4>
-                        <div>
-                            <i data-lucide="book"></i>
-                            <span>الحديث والسنة النبوية</span>
-                        </div>
-                        <hr>
-                        <div>
-                            <i data-lucide="book"></i>
-                            <span>12 كتاب</span>
-                        </div>
-                    </div>
-                    <div class="auther_card">
-                        <h4>الإمام أبو جعفر الطبري</h4>
-                        <div>
-                            <i data-lucide="book"></i>
-                            <span>التفسير والتاريخ</span>
-                        </div>
-                        <hr>
-                        <div>
-                            <i data-lucide="book"></i>
-                            <span>8 كتاب</span>
-                        </div>
-                    </div>
-                    <div class="auther_card">
-                        <h4>الإمام أبو حامد الغزالي</h4>
-                        <div>
-                            <i data-lucide="book"></i>
-                            <span>الفقه والتصوف</span>
-                        </div>
-                        <hr>
-                        <div>
-                            <i data-lucide="book"></i>
-                            <span>15 كتاب</span>
-                        </div>
-                    </div>
-                    <div class="auther_card">
-                        <h4>الإمام محمد بن إسماعيل البخاري</h4>
-                        <div>
-                            <i data-lucide="book"></i>
-                            <span>الحديث والسنة النبوية</span>
-                        </div>
-                        <hr>
-                        <div>
-                            <i data-lucide="book"></i>
-                            <span>12 كتاب</span>
-                        </div>
-                    </div>
-                    <div class="auther_card">
-                        <h4>الإمام أبو جعفر الطبري</h4>
-                        <div>
-                            <i data-lucide="book"></i>
-                            <span>التفسير والتاريخ</span>
-                        </div>
-                        <hr>
-                        <div>
-                            <i data-lucide="book"></i>
-                            <span>8 كتاب</span>
-                        </div>
-                    </div>
-                    <div class="auther_card">
-                        <h4>الإمام أبو حامد الغزالي</h4>
-                        <div>
-                            <i data-lucide="book"></i>
-                            <span>الفقه والتصوف</span>
-                        </div>
-                        <hr>
-                        <div>
-                            <i data-lucide="book"></i>
-                            <span>15 كتاب</span>
-                        </div>
-                    </div>
-                   
-                </div>
-         </section>
-
-         <!-- subscribtion -->
-
-         <section id="subscribtion">
-            <div>
-                <p>
-                    <i data-lucide="mail"></i>
-                </p>
-                <p>
-                    اشترك في النشرة البريدية
-                </p>
-                <p>
-                    احصل على آخر الإضافات والتحديثات مباشرة في بريدك الإلكتروني
-                </p>
-
-                <form action="">
-                    <div>
-                        <input type="email">
-                    </div>
-                    <button type="submit">
-                        <i data-lucide="send"></i>
-                        اشتراك
-                    </button>
-                </form>
-                <p>
-                    لن نشارك بريدك الإلكتروني مع أي جهة خارجية
-                </p>
-
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
-         </section>
+        </div>
+
+    </section>
+    <section class="grid_books">
+        <div id="container">
+
+            <div class="tittle">
+                <img src="../../assets/left_arrow.png" alt="">
+                <h2>الكتب المخفضه</h2>
+                <img src="../../assets/right_arrow.png" alt="">
+            </div>
+
+            <div class="inner_books swiper books-swiper">
+                <div class="swiper-wrapper">
+                    <!-- Repeated items for carousel -->
+                    <div class="book swiper-slide">
+                        <div>
+                            <img src="../../assets/available_books/0ef567450a16427da4829b98ad3d2e742f577dd5.jpg"
+                                width="100%" alt="">
+                        </div>
+                        <div class="book_details">
+                            <h4>التفسير الكبير</h4>
+                            <h5>فخر الدين الرازي</h5>
+                            <h6>120 جنيه مصري</h6>
+                        </div>
+                        <div class="badge">التفسير</div>
+                    </div>
+                    <!-- Duplicate to fill -->
+                    <div class="book swiper-slide">
+                        <div>
+                            <img src="../../assets/available_books/4c03f5ce154c4d1d2c98b9fcbbc2fbbdf9bf7584.jpg"
+                                width="100%" alt="">
+                        </div>
+                        <div class="book_details">
+                            <h4>التفسير الكبير</h4>
+                            <h5>فخر الدين الرازي</h5>
+                            <h6>120 جنيه مصري</h6>
+                        </div>
+                        <div class="badge">التفسير</div>
+                    </div>
+                    <div class="book swiper-slide">
+                        <div>
+                            <img src="../../assets/available_books/d120449ab330dffaafec3652f6a7f97be7c31081.jpg"
+                                width="100%" alt="">
+                        </div>
+                        <div class="book_details">
+                            <h4>التفسير الكبير</h4>
+                            <h5>فخر الدين الرازي</h5>
+                            <h6>120 جنيه مصري</h6>
+                        </div>
+                        <div class="badge">التفسير</div>
+                    </div>
+                    <div class="book swiper-slide">
+                        <div>
+                            <img src="../../assets/available_books/4c03f5ce154c4d1d2c98b9fcbbc2fbbdf9bf7584.jpg"
+                                width="100%" alt="">
+                        </div>
+                        <div class="book_details">
+                            <h4>التفسير الكبير</h4>
+                            <h5>فخر الدين الرازي</h5>
+                            <h6>120 جنيه مصري</h6>
+                        </div>
+                        <div class="badge">التفسير</div>
+                    </div>
+                    <!-- Repeats -->
+                    <div class="book swiper-slide">
+                        <div>
+                            <img src="../../assets/available_books/0ef567450a16427da4829b98ad3d2e742f577dd5.jpg"
+                                width="100%" alt="">
+                        </div>
+                        <div class="book_details">
+                            <h4>التفسير الكبير</h4>
+                            <h5>فخر الدين الرازي</h5>
+                            <h6>120 جنيه مصري</h6>
+                        </div>
+                        <div class="badge">التفسير</div>
+                    </div>
+                    <div class="book swiper-slide">
+                        <div>
+                            <img src="../../assets/available_books/4c03f5ce154c4d1d2c98b9fcbbc2fbbdf9bf7584.jpg"
+                                width="100%" alt="">
+                        </div>
+                        <div class="book_details">
+                            <h4>التفسير الكبير</h4>
+                            <h5>فخر الدين الرازي</h5>
+                            <h6>120 جنيه مصري</h6>
+                        </div>
+                        <div class="badge">التفسير</div>
+                    </div>
+                    <div class="book swiper-slide">
+                        <div>
+                            <img src="../../assets/available_books/d120449ab330dffaafec3652f6a7f97be7c31081.jpg"
+                                width="100%" alt="">
+                        </div>
+                        <div class="book_details">
+                            <h4>التفسير الكبير</h4>
+                            <h5>فخر الدين الرازي</h5>
+                            <h6>120 جنيه مصري</h6>
+                        </div>
+                        <div class="badge">التفسير</div>
+                    </div>
+                    <div class="book swiper-slide">
+                        <div>
+                            <img src="../../assets/available_books/4c03f5ce154c4d1d2c98b9fcbbc2fbbdf9bf7584.jpg"
+                                width="100%" alt="">
+                        </div>
+                        <div class="book_details">
+                            <h4>التفسير الكبير</h4>
+                            <h5>فخر الدين الرازي</h5>
+                            <h6>120 جنيه مصري</h6>
+                        </div>
+                        <div class="badge">التفسير</div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+
+    </section>
+    <section class="grid_books">
+        <div id="container">
+
+            <div class="tittle">
+                <img src="../../assets/left_arrow.png" alt="">
+                <h2>احدث الاصدارات</h2>
+                <img src="../../assets/right_arrow.png" alt="">
+            </div>
+
+            <div class="inner_books swiper books-swiper">
+                <div class="swiper-wrapper">
+                    <!-- Repeated items for carousel -->
+                    <div class="book swiper-slide">
+                        <div>
+                            <img src="../../assets/available_books/0ef567450a16427da4829b98ad3d2e742f577dd5.jpg"
+                                width="100%" alt="">
+                        </div>
+                        <div class="book_details">
+                            <h4>التفسير الكبير</h4>
+                            <h5>فخر الدين الرازي</h5>
+                            <h6>120 جنيه مصري</h6>
+                        </div>
+                        <div class="badge">التفسير</div>
+                    </div>
+                    <!-- Duplicate to fill -->
+                    <div class="book swiper-slide">
+                        <div>
+                            <img src="../../assets/available_books/4c03f5ce154c4d1d2c98b9fcbbc2fbbdf9bf7584.jpg"
+                                width="100%" alt="">
+                        </div>
+                        <div class="book_details">
+                            <h4>التفسير الكبير</h4>
+                            <h5>فخر الدين الرازي</h5>
+                            <h6>120 جنيه مصري</h6>
+                        </div>
+                        <div class="badge">التفسير</div>
+                    </div>
+                    <div class="book swiper-slide">
+                        <div>
+                            <img src="../../assets/available_books/d120449ab330dffaafec3652f6a7f97be7c31081.jpg"
+                                width="100%" alt="">
+                        </div>
+                        <div class="book_details">
+                            <h4>التفسير الكبير</h4>
+                            <h5>فخر الدين الرازي</h5>
+                            <h6>120 جنيه مصري</h6>
+                        </div>
+                        <div class="badge">التفسير</div>
+                    </div>
+                    <div class="book swiper-slide">
+                        <div>
+                            <img src="../../assets/available_books/4c03f5ce154c4d1d2c98b9fcbbc2fbbdf9bf7584.jpg"
+                                width="100%" alt="">
+                        </div>
+                        <div class="book_details">
+                            <h4>التفسير الكبير</h4>
+                            <h5>فخر الدين الرازي</h5>
+                            <h6>120 جنيه مصري</h6>
+                        </div>
+                        <div class="badge">التفسير</div>
+                    </div>
+                    <!-- Repeats -->
+                    <div class="book swiper-slide">
+                        <div>
+                            <img src="../../assets/available_books/0ef567450a16427da4829b98ad3d2e742f577dd5.jpg"
+                                width="100%" alt="">
+                        </div>
+                        <div class="book_details">
+                            <h4>التفسير الكبير</h4>
+                            <h5>فخر الدين الرازي</h5>
+                            <h6>120 جنيه مصري</h6>
+                        </div>
+                        <div class="badge">التفسير</div>
+                    </div>
+                    <div class="book swiper-slide">
+                        <div>
+                            <img src="../../assets/available_books/4c03f5ce154c4d1d2c98b9fcbbc2fbbdf9bf7584.jpg"
+                                width="100%" alt="">
+                        </div>
+                        <div class="book_details">
+                            <h4>التفسير الكبير</h4>
+                            <h5>فخر الدين الرازي</h5>
+                            <h6>120 جنيه مصري</h6>
+                        </div>
+                        <div class="badge">التفسير</div>
+                    </div>
+                    <div class="book swiper-slide">
+                        <div>
+                            <img src="../../assets/available_books/d120449ab330dffaafec3652f6a7f97be7c31081.jpg"
+                                width="100%" alt="">
+                        </div>
+                        <div class="book_details">
+                            <h4>التفسير الكبير</h4>
+                            <h5>فخر الدين الرازي</h5>
+                            <h6>120 جنيه مصري</h6>
+                        </div>
+                        <div class="badge">التفسير</div>
+                    </div>
+                    <div class="book swiper-slide">
+                        <div>
+                            <img src="../../assets/available_books/4c03f5ce154c4d1d2c98b9fcbbc2fbbdf9bf7584.jpg"
+                                width="100%" alt="">
+                        </div>
+                        <div class="book_details">
+                            <h4>التفسير الكبير</h4>
+                            <h5>فخر الدين الرازي</h5>
+                            <h6>120 جنيه مصري</h6>
+                        </div>
+                        <div class="badge">التفسير</div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+
+    </section>
+    <section class="grid_books">
+        <div id="container">
+
+            <div class="tittle">
+                <img src="../../assets/left_arrow.png" alt="">
+                <h2>إصدارات جديدة</h2>
+                <img src="../../assets/right_arrow.png" alt="">
+            </div>
+
+            <div class="inner_books swiper books-swiper">
+                <div class="swiper-wrapper">
+                    <!-- Repeated items for carousel -->
+                    <div class="book swiper-slide">
+                        <div>
+                            <img src="../../assets/available_books/0ef567450a16427da4829b98ad3d2e742f577dd5.jpg"
+                                width="100%" alt="">
+                        </div>
+                        <div class="book_details">
+                            <h4>التفسير الكبير</h4>
+                            <h5>فخر الدين الرازي</h5>
+                            <h6>120 جنيه مصري</h6>
+                        </div>
+                        <div class="badge">التفسير</div>
+                    </div>
+                    <!-- Duplicate to fill -->
+                    <div class="book swiper-slide">
+                        <div>
+                            <img src="../../assets/available_books/4c03f5ce154c4d1d2c98b9fcbbc2fbbdf9bf7584.jpg"
+                                width="100%" alt="">
+                        </div>
+                        <div class="book_details">
+                            <h4>التفسير الكبير</h4>
+                            <h5>فخر الدين الرازي</h5>
+                            <h6>120 جنيه مصري</h6>
+                        </div>
+                        <div class="badge">التفسير</div>
+                    </div>
+                    <div class="book swiper-slide">
+                        <div>
+                            <img src="../../assets/available_books/d120449ab330dffaafec3652f6a7f97be7c31081.jpg"
+                                width="100%" alt="">
+                        </div>
+                        <div class="book_details">
+                            <h4>التفسير الكبير</h4>
+                            <h5>فخر الدين الرازي</h5>
+                            <h6>120 جنيه مصري</h6>
+                        </div>
+                        <div class="badge">التفسير</div>
+                    </div>
+                    <div class="book swiper-slide">
+                        <div>
+                            <img src="../../assets/available_books/4c03f5ce154c4d1d2c98b9fcbbc2fbbdf9bf7584.jpg"
+                                width="100%" alt="">
+                        </div>
+                        <div class="book_details">
+                            <h4>التفسير الكبير</h4>
+                            <h5>فخر الدين الرازي</h5>
+                            <h6>120 جنيه مصري</h6>
+                        </div>
+                        <div class="badge">التفسير</div>
+                    </div>
+                    <!-- Repeats -->
+                    <div class="book swiper-slide">
+                        <div>
+                            <img src="../../assets/available_books/0ef567450a16427da4829b98ad3d2e742f577dd5.jpg"
+                                width="100%" alt="">
+                        </div>
+                        <div class="book_details">
+                            <h4>التفسير الكبير</h4>
+                            <h5>فخر الدين الرازي</h5>
+                            <h6>120 جنيه مصري</h6>
+                        </div>
+                        <div class="badge">التفسير</div>
+                    </div>
+                    <div class="book swiper-slide">
+                        <div>
+                            <img src="../../assets/available_books/4c03f5ce154c4d1d2c98b9fcbbc2fbbdf9bf7584.jpg"
+                                width="100%" alt="">
+                        </div>
+                        <div class="book_details">
+                            <h4>التفسير الكبير</h4>
+                            <h5>فخر الدين الرازي</h5>
+                            <h6>120 جنيه مصري</h6>
+                        </div>
+                        <div class="badge">التفسير</div>
+                    </div>
+                    <div class="book swiper-slide">
+                        <div>
+                            <img src="../../assets/available_books/d120449ab330dffaafec3652f6a7f97be7c31081.jpg"
+                                width="100%" alt="">
+                        </div>
+                        <div class="book_details">
+                            <h4>التفسير الكبير</h4>
+                            <h5>فخر الدين الرازي</h5>
+                            <h6>120 جنيه مصري</h6>
+                        </div>
+                        <div class="badge">التفسير</div>
+                    </div>
+                    <div class="book swiper-slide">
+                        <div>
+                            <img src="../../assets/available_books/4c03f5ce154c4d1d2c98b9fcbbc2fbbdf9bf7584.jpg"
+                                width="100%" alt="">
+                        </div>
+                        <div class="book_details">
+                            <h4>التفسير الكبير</h4>
+                            <h5>فخر الدين الرازي</h5>
+                            <h6>120 جنيه مصري</h6>
+                        </div>
+                        <div class="badge">التفسير</div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- books' categories  -->
+    <section class="categories_cards">
+        <h2>أقسام الكتب</h2>
+        <p>استكشف مكتبتنا الشاملة من الكتب الإسلامية عبر مختلف الأقسام والتخصصات</p>
+        <div id="container">
+            <div class="category_card">
+                <i data-lucide="book"></i>
+                <h5>الفقه</h5>
+                <p>كتب الفقه الإسلامي والأحكام الشرعية</p>
+                <hr>
+                <div>
+                    <span>عدد الكتب</span>
+                    <span>245</span>
+                </div>
+            </div>
+
+
+
+            <div class="category_card">
+                <i data-lucide="book"></i>
+                <h5>الحديث</h5>
+                <p>كتب الحديث النبوي الشريف</p>
+                <hr>
+                <div>
+                    <span>عدد الكتب</span>
+                    <span>189</span>
+                </div>
+            </div>
+
+
+
+            <div class="category_card">
+                <i data-lucide="book"></i>
+                <h5>التفسير</h5>
+                <p>كتب تفسير القرآن الكريم</p>
+                <hr>
+                <div>
+                    <span>عدد الكتب</span>
+                    <span>156</span>
+                </div>
+            </div>
+
+
+
+            <div class="category_card">
+                <i data-lucide="book"></i>
+                <h5>العقيدة</h5>
+                <p>كتب العقيدة والتوحيد</p>
+                <hr>
+                <div>
+                    <span>عدد الكتب</span>
+                    <span>134</span>
+                </div>
+            </div>
+
+
+
+            <div class="category_card">
+                <i data-lucide="book"></i>
+                <h5>السيرة</h5>
+                <p>كتب السيرة النبوية والتاريخ الإسلامي</p>
+                <hr>
+                <div>
+                    <span>عدد الكتب</span>
+                    <span>198</span>
+                </div>
+            </div>
+
+
+
+            <div class="category_card">
+                <i data-lucide="book"></i>
+                <h5>أصول الفقه</h5>
+                <p>كتب أصول الفقه والقواعد الفقهية</p>
+                <hr>
+                <div>
+                    <span>عدد الكتب</span>
+                    <span>112</span>
+                </div>
+            </div>
+
+
+            <div class="category_card">
+                <i data-lucide="book"></i>
+                <h5>المخطوطات</h5>
+                <p>المخطوطات النادرة والتراث الإسلامي</p>
+                <hr>
+                <div>
+                    <span>عدد الكتب</span>
+                    <span>87</span>
+                </div>
+            </div>
+
+
+
+            <div class="category_card">
+                <i data-lucide="book"></i>
+                <h5>تراجم العلماء</h5>
+                <p>كتب التراجم وسير العلماء</p>
+                <hr>
+                <div>
+                    <span>عدد الكتب</span>
+                    <span>94</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Authors  -->
+
+    <section id="authors">
+        <div class="tittle">
+            <img src="../../assets/left_arrow.png" alt="">
+            <h2>المؤلفون</h2>
+            <img src="../../assets/right_arrow.png" alt="">
+        </div>
+        <p>تعرف على نخبة من علماء الأمة الإسلامية ومؤلفيها عبر التاريخ</p>
+
+        <div class="authors_grid" id="container">
+            <div class="auther_card">
+                <h4>الإمام محمد بن إسماعيل البخاري</h4>
+                <div>
+                    <i data-lucide="book"></i>
+                    <span>الحديث والسنة النبوية</span>
+                </div>
+                <hr>
+                <div>
+                    <i data-lucide="book"></i>
+                    <span>12 كتاب</span>
+                </div>
+            </div>
+            <div class="auther_card">
+                <h4>الإمام أبو جعفر الطبري</h4>
+                <div>
+                    <i data-lucide="book"></i>
+                    <span>التفسير والتاريخ</span>
+                </div>
+                <hr>
+                <div>
+                    <i data-lucide="book"></i>
+                    <span>8 كتاب</span>
+                </div>
+            </div>
+            <div class="auther_card">
+                <h4>الإمام أبو حامد الغزالي</h4>
+                <div>
+                    <i data-lucide="book"></i>
+                    <span>الفقه والتصوف</span>
+                </div>
+                <hr>
+                <div>
+                    <i data-lucide="book"></i>
+                    <span>15 كتاب</span>
+                </div>
+            </div>
+            <div class="auther_card">
+                <h4>الإمام محمد بن إسماعيل البخاري</h4>
+                <div>
+                    <i data-lucide="book"></i>
+                    <span>الحديث والسنة النبوية</span>
+                </div>
+                <hr>
+                <div>
+                    <i data-lucide="book"></i>
+                    <span>12 كتاب</span>
+                </div>
+            </div>
+            <div class="auther_card">
+                <h4>الإمام أبو جعفر الطبري</h4>
+                <div>
+                    <i data-lucide="book"></i>
+                    <span>التفسير والتاريخ</span>
+                </div>
+                <hr>
+                <div>
+                    <i data-lucide="book"></i>
+                    <span>8 كتاب</span>
+                </div>
+            </div>
+            <div class="auther_card">
+                <h4>الإمام أبو حامد الغزالي</h4>
+                <div>
+                    <i data-lucide="book"></i>
+                    <span>الفقه والتصوف</span>
+                </div>
+                <hr>
+                <div>
+                    <i data-lucide="book"></i>
+                    <span>15 كتاب</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- subscribtion -->
+
+    <section id="subscribtion">
+        <div>
+            <p>
+                <i data-lucide="mail"></i>
+            </p>
+            <p>
+                اشترك في النشرة البريدية
+            </p>
+            <p>
+                احصل على آخر الإضافات والتحديثات مباشرة في بريدك الإلكتروني
+            </p>
+
+            <form action="">
+                <div>
+                    <input type="email">
+                </div>
+                <button type="submit">
+                    <i data-lucide="send"></i>
+                    اشتراك
+                </button>
+            </form>
+            <p>
+                لن نشارك بريدك الإلكتروني مع أي جهة خارجية
+            </p>
+
+        </div>
+    </section>
     <!-- footer -->
     <footer>
         <div id="container">
@@ -573,6 +845,7 @@
         }
     </script> -->
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./index.js"></script>
 </body>
 
