@@ -104,36 +104,36 @@ section>strong {
 }
 
 .description {
-    color: #666 !important;
-    line-height: 1.8 !important;
-    font-size: 16px !important;
-    max-width: 90% !important;
+    color: #666;
+    line-height: 1.8;
+    font-size: 16px;
+    max-width: 90%;
 }
 
 /* Specs Section Styling */
 .specs_section {
-    background-color: #f5f7f6 !important;
-    padding: 25px !important;
-    border-radius: 12px !important;
+    background-color: #f5f7f6;
+    padding: 25px;
+    border-radius: 12px;
 }
 
 .specs_section h3 {
-    color: #1a4d3a !important;
-    margin-bottom: 15px !important;
-    font-size: 18px !important;
+    color: #1a4d3a;
+    margin-bottom: 15px;
+    font-size: 18px;
 }
 
 .specs_grid {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    gap: 20px 0 !important;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 0;
 }
 
 .spec_item {
-    flex-basis: 50% !important;
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 5px !important;
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .spec_item.full_width {
