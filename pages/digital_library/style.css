@@ -55,8 +55,8 @@ section>strong {
     background-color: rgba(255, 255, 255, 0.08);
 }
 
-.stat-card i {
-    color: #fe9401;
+.stat-card > [data-lucide] {
+    color: var(--badge-color);
     width: 32px;
     height: 32px;
 }
@@ -73,7 +73,7 @@ section>strong {
 }
 
 .who_we_are {
-    background: linear-gradient(180deg, #1b3d1b 0%, #0d2b0d 100%);
+    background: linear-gradient(  var(--first-color-linear-gradient) , var(--second-color-linear-gradient ));
     color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -86,7 +86,7 @@ section>strong {
 
 .who_we_are_badge {
     background-color: #fe9401;
-    color: #ffffff;
+    color: var(--main-color);
     padding: 8px 20px;
     border-radius: 50px;
     display: flex;
@@ -133,14 +133,14 @@ section>strong {
 }
 
 .vision-card {
-    background: #ff8c00;
+    background: var(--badge-color);
     /* Solid orange as in image */
-    color: #ffffff;
+    color: var(--main-color);
     box-shadow: 0 10px 30px rgba(255, 140, 0, 0.2);
 }
 
 .mission-card {
-    background: #ffffff;
+    background: var(--main-color);
     color: #333333;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     border: 1px solid #f0f0f0;
@@ -200,7 +200,7 @@ section>strong {
 }
 
 .vision-card .card-list li i {
-    color: #ffffff;
+    color: var(--main-color);
     width: 20px;
     height: 20px;
 }
@@ -362,12 +362,12 @@ section>strong {
 }
 
 .last .btns .btn-primary {
-    background-color: #fe9401;
-    color: white;
+    background-color: var(--badge-color);
+    color: var(--main-color);
 }
 
 .last .btns .btn-secondary {
-    background-color: white;
+    background-color: var(--main-color);
     color: #2e7d32;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }

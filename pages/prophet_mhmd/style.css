@@ -41,7 +41,7 @@ section>strong {
 
 
 #book_review {
-    background-color: #fff;
+    background-color: var(--main-color);
     padding: 60px 0;
 }
 
@@ -56,7 +56,7 @@ section>strong {
 #book_review .book_image {
     flex: 1;
     max-width: 450px;
-    background: #fff;
+    background: var(--main-color);
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
@@ -95,8 +95,8 @@ section>strong {
 }
 
 .category_badge {
-    background-color: #ff9800;
-    color: #fff;
+    background-color: var(--badge-color);
+    color: var(--main-color);
     padding: 4px 20px;
     border-radius: 20px;
     font-size: 16px;
@@ -154,7 +154,7 @@ section>strong {
 /* Price Tag Styling */
 .price_tag {
     background-color: #3b6b55;
-    color: #fff;
+    color: var(--main-color);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -197,7 +197,7 @@ section>strong {
     padding: 12px;
     border: none;
     border-radius: 8px;
-    color: #fff;
+    color: var(--main-color);
     font-weight: 700;
     font-size: 16px;
     cursor: pointer;
@@ -218,7 +218,7 @@ section>strong {
 }
 
 .btn.call {
-    background-color: #ff9800;
+    background-color: var(--badge-color);
 }
 
 .btn i {
@@ -230,7 +230,7 @@ section>strong {
 .note_box {
     background-color: #fff9e6;
     padding: 15px;
-    border-right: 4px solid #ff9800;
+    border-right: 4px solid var(--badge-color);
     border-radius: 4px;
     font-size: 14px;
     line-height: 1.6;
