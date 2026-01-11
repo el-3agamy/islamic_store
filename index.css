@@ -37,20 +37,22 @@ ul {
 
 
 header {
-    max-height: calc(100vh -70px);
+    max-height: calc(100vh - 70px);
+    position: relative;
 }
 
 
 
 /* common back to home section  */
 
-#back_to_home_section{
-     background-color: var(--back-to-home-bg);
+#back_to_home_section {
+    background-color: var(--back-to-home-bg);
     cursor: pointer;
     color: #fff;
     padding: 20px 40px;
 
 }
+
 #back_to_home_section a {
     text-decoration: none;
     color: #fff;
@@ -61,6 +63,7 @@ header {
 nav {
     position: fixed;
     width: 100%;
+    z-index: 999;
 }
 
 nav .nav-container {
@@ -147,6 +150,9 @@ main #stats p {
     color: var(--badge-color);
     font-size: 48px;
     font-weight: 700;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 main #stats p span {
@@ -164,9 +170,13 @@ main #stats p span {
 
 }
 
-.new_versions,
+.new_versions {
+    background-color: var(--main-color);
+}
+
 .most_selling {
     background-color: var(--main-color);
+    padding-top: 90px;
 }
 
 .book {
@@ -221,7 +231,7 @@ main #stats p span {
     justify-content: space-around;
     align-items: center;
     gap: 30px;
-
+    position: relative;
 }
 
 .tittle {
@@ -369,6 +379,20 @@ main #stats p span {
     box-shadow: 5px 5px 5px 2px rgba(128, 128, 128, 0.468);
 }
 
+.auther_card .info-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.auther_card .stats-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
 .categories-swiper,
 .authors-swiper {
     width: 100%;
@@ -475,6 +499,7 @@ main #stats p span {
     cursor: pointer;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
     transition: all 0.3s ease;
     box-shadow: 0 8px 15px rgba(255, 152, 0, 0.3);
