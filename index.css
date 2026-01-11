@@ -540,6 +540,40 @@ footer section {
     direction: ltr;
 } */
 
+/* Social Media Icons */
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-media-icons a {
+    background-color: var(--icons-background);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--main-color);
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social-media-icons a:hover {
+    background-color: var(--badge-color);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 152, 0, 0.3);
+}
+
+.social-media-icons a i {
+    color: var(--main-color);
+    width: 20px;
+    height: 20px;
+}
+
 footer #copy_rights {
     margin: auto;
 }

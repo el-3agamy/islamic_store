@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,77 +10,80 @@
     <!-- Lucide Icons  -->
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
+
 <body>
 
-     <div>
+    <div>
         <section>
             <a href="../../index.html"> العودة إلى الرئيسية </a>
 
         </section>
         <section>
             <h1>الاقتراحات والملاحظات</h1>
-          
-            <p  id="author_bio">
-نحن نسعى دائماً لتحسين خدماتنا وتقديم الأفضل لك. شاركنا اقتراحاتك وملاحظاتك لنطور معاً منصة التراث الإسلامي            </p>
+
+            <p id="author_bio">
+                نحن نسعى دائماً لتحسين خدماتنا وتقديم الأفضل لك. شاركنا اقتراحاتك وملاحظاتك لنطور معاً منصة التراث
+                الإسلامي </p>
         </section>
-       
+
         <!-- form  -->
-         <section class="form_section">
-           <div id="container">
-             <div class="aside">
-                <div>
-                    <h4>لماذا نطلب اقتراحاتك؟</h4>
-                    <ul>
-                        <li> <i data-lucide="circle-check-big"></i>تحسين تجربة المستخدم</li>
-                        <li> <i data-lucide="circle-check-big"></i>إضافة كتب ومؤلفين جدد  </li>
-                        <li> <i data-lucide="circle-check-big"></i>تطوير خدمات جديدة  </li>
-                        <li> <i data-lucide="circle-check-big"></i>حل المشاكل التقنية </li>
-                    </ul>
-                    
+        <section class="form_section">
+            <div id="container">
+                <div class="aside">
+                    <div>
+                        <h4>لماذا نطلب اقتراحاتك؟</h4>
+                        <ul>
+                            <li> <i data-lucide="circle-check-big"></i>تحسين تجربة المستخدم</li>
+                            <li> <i data-lucide="circle-check-big"></i>إضافة كتب ومؤلفين جدد </li>
+                            <li> <i data-lucide="circle-check-big"></i>تطوير خدمات جديدة </li>
+                            <li> <i data-lucide="circle-check-big"></i>حل المشاكل التقنية </li>
+                        </ul>
+
+                    </div>
+                    <div>
+                        <i data-lucide="message-square"></i><br>
+                        <p><strong>نستمع إليك</strong> <br>
+                            كل اقتراح وملاحظة نتلقاها يتم
+                            <br> دراستها بعناية من قبل فريقنا المختص
+                        </p>
+                    </div>
                 </div>
-                <div>
-                    <i  data-lucide="message-square"></i><br>
-                    <p><strong>نستمع إليك</strong> <br>
-                        كل اقتراح وملاحظة نتلقاها يتم
-                        <br> دراستها بعناية من قبل فريقنا المختص
-                    </p>
+                <div class="form_wraper">
+                    <form action="">
+                        <h4>نموذج الاقتراحات</h4>
+                        <div class="input">
+                            <label for="full_name"><i data-lucide="user"></i>الاسم الكامل</label>
+                            <input id="full_name" type="text">
+                        </div>
+                        <div class="input">
+                            <label for="email"><i data-lucide="mail"></i> البريد الإلكتروني</label>
+                            <input type="email">
+                        </div>
+                        <div class="input">
+                            <label for="user_suggestion"><i data-lucide="message-square"></i>الاقتراح أو
+                                الملاحظة</label>
+                            <textarea name="" id="user_suggestion"></textarea>
+                        </div>
+                        <button type="submit">
+                            <i data-lucide="send"> </i>إرسال الاقتراح
+                        </button>
+                    </form>
+
+                    <div class="statsics">
+                        <div>
+                            <p><strong>500+</strong> <br>اقتراح تم تنفيذه</p>
+                        </div>
+                        <div>
+                            <p><strong>1200+</strong><br> مستخدم شارك رأيه</p>
+                        </div>
+                        <div>
+                            <p><strong>98%</strong><br> رضا المستخدمين</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-           <div class="form_wraper">
-               <form action="">
-                 <h4>نموذج الاقتراحات</h4>
-                <div class="input">
-                    <label for="full_name"><i data-lucide="user"></i>الاسم الكامل</label>
-                    <input  id="full_name" type="text">
-                </div>
-                <div class="input">
-                    <label for="email"><i data-lucide="mail"></i> البريد الإلكتروني</label>
-                    <input type="email">
-                </div>
-                <div class="input">
-                    <label for="user_suggestion"><i data-lucide="message-square"></i>الاقتراح أو الملاحظة</label>
-                    <textarea name="" id="user_suggestion" ></textarea>
-                </div>
-                <button type="submit">
-                    <i data-lucide="send"> </i>إرسال الاقتراح
-                </button>
-            </form>
 
-            <div class="statsics">
-                    <div>
-                        <p><strong>500+</strong> <br>اقتراح تم تنفيذه</p>
-                    </div>
-                    <div>
-                        <p><strong>1200+</strong><br> مستخدم شارك رأيه</p>
-                    </div>
-                    <div>
-                        <p><strong>98%</strong><br> رضا المستخدمين</p>
-                    </div>
-            </div>
-           </div>
-           </div>
-
-         </section>
+        </section>
         <!-- footer -->
         <footer>
             <div id="container">
@@ -95,6 +99,12 @@
                     </div>
                     <div id="logo footer_logo">
                         <img src="../../assets/logo.png" width="100%" alt="طبري لوجو">
+                        <div class="social-media-icons">
+                            <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                            <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                            <a href="#" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+                        </div>
                     </div>
                 </section>
                 <hr>
@@ -110,6 +120,7 @@
     <script>
         lucide.createIcons();
     </script>
-    
+
 </body>
+
 </html>
