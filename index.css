@@ -40,6 +40,22 @@ header {
     max-height: calc(100vh -70px);
 }
 
+
+
+/* common back to home section  */
+
+#back_to_home_section{
+     background-color: var(--back-to-home-bg);
+    cursor: pointer;
+    color: #fff;
+    padding: 20px 40px;
+
+}
+#back_to_home_section a {
+    text-decoration: none;
+    color: #fff;
+}
+
 /* navbar */
 
 nav {
@@ -516,7 +532,6 @@ footer section {
 #contacts,
 #logo {
     flex-grow: 1;
-    /* width: 100%; */
 }
 
 #contacts ul li {
@@ -535,10 +550,7 @@ footer section {
     background-color: var(--icons-background);
 }
 
-/* #contacts ul li:nth-child(1) {
-    text-align: left;
-    direction: ltr;
-} */
+
 
 /* Social Media Icons */
 .social-media-icons {
@@ -579,7 +591,6 @@ footer #copy_rights {
 }
 
 
-/* Media Query --> Responsive */
 
 .grid_books #container {
     position: relative;
@@ -632,13 +643,11 @@ footer #copy_rights {
 
     nav ul {
         display: none;
-        /* Hidden by default */
         flex-direction: column;
         width: 100%;
         text-align: center;
         margin-top: 10px;
         background: transparent;
-        /* inherited from container */
     }
 
     nav ul.active {
@@ -658,7 +667,6 @@ footer #copy_rights {
     /* Categories */
     .categories_cards #container>.category_card {
         width: 45%;
-        /* Two per row on tablet/mobile */
     }
 
     /* Authors */
@@ -688,7 +696,6 @@ footer #copy_rights {
 @media (max-width: 480px) {
     .categories_cards #container>.category_card {
         width: 90%;
-        /* Full width on very small screens */
     }
 
     .auther_card {

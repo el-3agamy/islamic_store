@@ -39,17 +39,6 @@ section>strong {
 }
 
 
-#back_to_home {
-    background-color: var(--back-to-home-bg);
-    cursor: pointer;
-    color: #fff;
-    padding: 20px 40px;
-
-    >a {
-        text-decoration: none;
-        color: #fff;
-    }
-}
 
 #book_review {
     background-color: #fff;
@@ -89,7 +78,7 @@ section>strong {
     gap: 25px;
     background-color: transparent;
     /* Override global .book_details if needed */
-    padding: 0;
+    padding: 0 !important;
 }
 
 #book_review .header_info h1 {

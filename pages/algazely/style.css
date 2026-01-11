@@ -34,17 +34,7 @@ section>strong{
 }
 
 
-div section:nth-child(1) {
-    background-color: var(--back-to-home-bg);
-    cursor: pointer;
-    color: #fff;
-    padding: 20px 40px;
 
-    >a {
-        text-decoration: none;
-        color: #fff;
-    }
-}
 
 div section:nth-child(2) {
     background: linear-gradient(to bottom, var(--first-color-linear-gradient), var(--second-color-linear-gradient));

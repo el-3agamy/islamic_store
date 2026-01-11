@@ -1,14 +1,4 @@
-div section:nth-child(1) {
-    background-color: var(--back-to-home-bg);
-    cursor: pointer;
-    color: #fff;
-    padding: 20px 40px;
 
-    >a {
-        text-decoration: none;
-        color: #fff;
-    }
-}
 
 #team {
     background-color: #f7f7f2;

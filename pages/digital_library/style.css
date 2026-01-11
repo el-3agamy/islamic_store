@@ -13,17 +13,7 @@ section>strong {
     gap: 10px;
 }
 
-div section:nth-child(1) {
-    background-color: var(--back-to-home-bg);
-    cursor: pointer;
-    color: #fff;
-    padding: 20px 40px;
 
-    >a {
-        text-decoration: none;
-        color: #fff;
-    }
-}
 #describtion {
     width: 100%;
     max-width: 800px;
@@ -316,7 +306,7 @@ div section:nth-child(1) {
     line-height: 1.6;
 }
 
-/* Responsive adjustment for values section */
+/* Responsive  */
 @media (max-width: 1024px) {
     .values_card {
         flex: 1 1 calc(50% - 20px);
@@ -404,6 +394,3 @@ div section:nth-child(1) {
     }
 }
 
-/* responsive  */
-
-@media (max-width : 768px) {}
