@@ -54,44 +54,44 @@ section>strong {
 
 /* Book Image Styling */
 #book_review .book_image { 
-    flex: 1 !important;
-    max-width: 450px !important;
-    background: var(--main-color) !important;
-    padding: 15px !important;
-    border-radius: 10px !important;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05) !important;
-    border: 1px solid #f0f0f0 !important;
+    flex: 1 ;
+    max-width: 450px ;
+    background: var(--main-color) ;
+    padding: 15px ;
+    border-radius: 10px ;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05) ;
+    border: 1px solid #f0f0f0 ;
 }
 
 #book_review .book_image img {
-    width: 100% !important; 
-    height: auto !important;
-    border-radius: 5px !important;
-    display: block !important;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    display: block;
 }
 
 
 #book_review .book_details {
-    display: flex !important;
-    flex: 1.2 !important;
-    flex-direction: column !important;
-    gap: 25px !important;
-    background-color: transparent !important;
+    display: flex;
+    flex: 1.2;
+    flex-direction: column;
+    gap: 25px;
+    background-color: transparent;
     /* Override global .book_details if needed */
     padding: 0 !important;
 }
 
 #book_review .header_info h1 {
-    color: #1a4d3a !important;
-    font-size: 42px !important;
-    font-weight: 800 !important;
-    margin-bottom: 5px !important;
+    color: #1a4d3a;
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 5px;
 }
 
 #book_review .header_info .author {
-    color: #558b7a !important;
-    font-size: 20px !important;
-    margin-bottom: 12px !important;
+    color: #558b7a;
+    font-size: 20px;
+    margin-bottom: 12px;
 }
 
 .category_badge {
