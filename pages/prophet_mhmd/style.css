@@ -240,27 +240,25 @@ section>strong {
 
 
 
-/* ===============================
-   Book Review Page – Strong Scoped CSS
-   =============================== */
+/* =========================================================
+   ULTRA SPECIFICITY – Book Review Page
+   Scope: #book_review only
+   ========================================================= */
 
-#book_review {
-    padding: 60px 0;
-}
+/* -------- Main Layout -------- */
 
-/* Main container */
-#book_review #container {
+section[id="book_review"] > div[id="container"] {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     gap: 20px;
 }
 
-/* ===============================
-   Book Details
-   =============================== */
+/* -------- Book Details Wrapper -------- */
 
-#book_review #container .book_details {
+section[id="book_review"]
+> div[id="container"]
+> div[class~="book_details"] {
     display: flex;
     flex: 1.2;
     flex-direction: column;
@@ -268,21 +266,31 @@ section>strong {
     background-color: transparent;
 }
 
-/* Header info */
-#book_review .book_details .header_info h1 {
+/* -------- Header Info -------- */
+
+section[id="book_review"]
+div[class~="book_details"]
+div[class~="header_info"]
+> h1 {
     color: #1a4d3a;
     font-size: 42px;
     font-weight: 800;
     margin-bottom: 5px;
 }
 
-#book_review .book_details .header_info .author {
+section[id="book_review"]
+div[class~="book_details"]
+div[class~="header_info"]
+> p[class~="author"] {
     color: #558b7a;
     font-size: 20px;
     margin-bottom: 12px;
 }
 
-#book_review .book_details .header_info .category_badge {
+section[id="book_review"]
+div[class~="book_details"]
+div[class~="header_info"]
+> span[class~="category_badge"] {
     background-color: var(--badge-color);
     color: var(--main-color);
     padding: 4px 20px;
@@ -291,63 +299,80 @@ section>strong {
     display: inline-block;
 }
 
-/* Description */
-#book_review .book_details .description {
+/* -------- Description -------- */
+
+section[id="book_review"]
+div[class~="book_details"]
+> p[class~="description"] {
     color: #666;
     line-height: 1.8;
     font-size: 16px;
     max-width: 90%;
 }
 
-/* ===============================
-   Specs Section
-   =============================== */
+/* -------- Specs Section -------- */
 
-#book_review .book_details .specs_section {
+section[id="book_review"]
+div[class~="book_details"]
+> div[class~="specs_section"] {
     background-color: #f5f7f6;
     padding: 25px;
     border-radius: 12px;
 }
 
-#book_review .specs_section h3 {
+section[id="book_review"]
+div[class~="specs_section"]
+> h3 {
     color: #1a4d3a;
     margin-bottom: 15px;
     font-size: 18px;
 }
 
-#book_review .specs_section .specs_grid {
+section[id="book_review"]
+div[class~="specs_section"]
+div[class~="specs_grid"] {
     display: flex;
     flex-wrap: wrap;
     gap: 20px 0;
 }
 
-#book_review .specs_grid .spec_item {
+/* -------- Spec Item -------- */
+
+section[id="book_review"]
+div[class~="specs_grid"]
+> div[class~="spec_item"] {
     flex-basis: 50%;
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-#book_review .specs_grid .spec_item.full_width {
+section[id="book_review"]
+div[class~="specs_grid"]
+> div[class~="spec_item"][class~="full_width"] {
     flex-basis: 100%;
 }
 
-#book_review .spec_item .label {
+section[id="book_review"]
+div[class~="spec_item"]
+> span[class~="label"] {
     color: #888;
     font-size: 13px;
 }
 
-#book_review .spec_item .value {
+section[id="book_review"]
+div[class~="spec_item"]
+> span[class~="value"] {
     color: #1a4d3a;
     font-weight: 700;
     font-size: 15px;
 }
 
-/* ===============================
-   Price Tag
-   =============================== */
+/* -------- Price Tag -------- */
 
-#book_review .book_details .price_tag {
+section[id="book_review"]
+div[class~="book_details"]
+> div[class~="price_tag"] {
     background-color: #3b6b55;
     color: var(--main-color);
     display: flex;
@@ -359,34 +384,42 @@ section>strong {
     text-align: center;
 }
 
-#book_review .price_tag .price_label {
+section[id="book_review"]
+div[class~="price_tag"]
+> span[class~="price_label"] {
     font-size: 14px;
     margin-bottom: 5px;
     opacity: 0.9;
 }
 
-#book_review .price_tag .price_value {
+section[id="book_review"]
+div[class~="price_tag"]
+> span[class~="price_value"] {
     font-size: 32px;
     font-weight: 800;
 }
 
-/* ===============================
-   Contact Section
-   =============================== */
+/* -------- Contact Section -------- */
 
-#book_review .book_details .contact_section h3 {
+section[id="book_review"]
+div[class~="contact_section"]
+> h3 {
     margin-bottom: 15px;
     color: #1a4d3a;
     font-size: 18px;
     font-weight: 800;
 }
 
-#book_review .contact_section .contact_methods {
+section[id="book_review"]
+div[class~="contact_section"]
+> div[class~="contact_methods"] {
     display: flex;
     gap: 15px;
 }
 
-#book_review .contact_methods .btn {
+section[id="book_review"]
+div[class~="contact_methods"]
+> button[class~="btn"] {
     flex: 1;
     display: flex;
     align-items: center;
@@ -403,16 +436,18 @@ section>strong {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-#book_review .contact_methods .btn:hover {
+section[id="book_review"]
+div[class~="contact_methods"]
+> button[class~="btn"]:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* ===============================
-   Note Box
-   =============================== */
+/* -------- Note Box -------- */
 
-#book_review .book_details .note_box {
+section[id="book_review"]
+div[class~="book_details"]
+> div[class~="note_box"] {
     background-color: #fff9e6;
     padding: 15px;
     border-right: 4px solid var(--badge-color);
@@ -422,35 +457,33 @@ section>strong {
     color: #444;
 }
 
-/* ===============================
-   Book Image
-   =============================== */
+/* -------- Book Image -------- */
 
-#book_review #container .book_image {
+section[id="book_review"]
+> div[id="container"]
+> div[class~="book_image"] {
     width: 45%;
 }
 
-#book_review #container .book_image img {
+section[id="book_review"]
+div[class~="book_image"]
+> img[alt][src] {
     width: 100%;
     display: block;
     border-radius: 12px;
 }
 
-/* ===============================
-   Responsive
-   =============================== */
+/* -------- Responsive -------- */
 
 /* @media (max-width: 992px) {
-    #book_review #container {
+    section[id="book_review"] > div[id="container"] {
         flex-direction: column;
     }
 
-    #book_review #container .book_image {
+    section[id="book_review"]
+    > div[id="container"]
+    > div[class~="book_image"] {
         width: 100%;
-    }
-
-    #book_review .book_details {
-        flex: 1;
     }
 } */
 
