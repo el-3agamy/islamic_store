@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://islamic-store-delta.vercel.app/
+Sitemap: https://islamic-store-nine.vercel.app/
