@@ -54,7 +54,7 @@ section>strong {
 
 /* Book Image Styling */
 #book_review .book_image { 
-    flex: 1 ;
+    /* flex: 1 ; */
     max-width: 450px ;
     background: var(--main-color) ;
     padding: 15px ;
@@ -272,7 +272,7 @@ section>strong {
     width: 100% !important;
         max-width: 100% !important;
         min-width: 100% !important;
-        flex: none !important;
+        /* flex: none !important; */
 
     }
 
