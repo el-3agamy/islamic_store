@@ -250,11 +250,11 @@ section>strong {
 
 @media(max-width : 768px){
     #container_book_review {
-        flex-direction: column-reverse;
-        margin: auto;
+        flex-direction: column-reverse !important;
+        margin: auto !important;
     }
     .contact_methods {
-        flex-direction: column;
+        flex-direction: column !important;
     }
 }
 
