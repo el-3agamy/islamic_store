@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,10 +9,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="../../index.css" />
     <link rel="stylesheet" href="./style.css" />
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -26,360 +24,77 @@
 
         <!-- Book review -->
         <section id="book_review">
-            <div
-                id="container_book_review"
-                style="display: flex; justify-content: center; align-items: start; gap: 20px;"
-            >
+            <div id="container_book_review">
                 <!-- Book details -->
-                <div
-                    class="book_details"
-                    style="
-                        display: flex;
-                        
-                        flex-direction: column;
-                        gap: 25px;
-                    "
-                >
+                <div class="book_details">
                     <div class="header_info">
-                        <h1
-                            style="
-                                color: #1a4d3a;
-                                font-size: 42px;
-                                font-weight: 800;
-                                margin-bottom: 5px;
-                            "
-                        >
-                            شرح شمائل النبي
-                        </h1>
-
-                        <p
-                            class="author"
-                            style="
-                                color: #558b7a;
-                                font-size: 20px;
-                                margin-bottom: 12px;
-                            "
-                        >
-                            المؤلف: آبي عيسي محمد
-                        </p>
-
-                        <span
-                            class="category_badge"
-                            style="
-                                background-color: var(--badge-color);
-                                color: var(--main-color);
-                                padding: 4px 20px;
-                                border-radius: 20px;
-                                font-size: 16px;
-                                display: inline-block;
-                            "
-                        >
-                            الحديث
-                        </span>
+                        <h1>شرح شمائل النبي</h1>
+                        <p class="author">المؤلف: آبي عيسي محمد</p>
+                        <span class="category_badge">الحديث</span>
                     </div>
 
-                    <p
-                        class="description"
-                        style="
-                            color: #666;
-                            line-height: 1.8;
-                            font-size: 16px;
-                            max-width: 90%;
-                        "
-                    >
+                    <p class="description">
                         أصح كتب الحديث النبوي الشريف بإجماع الأمة، جمع فيه الإمام
-                        البخاري أصح الأحاديث بعد القرآن الكريم. يضم الكتاب أكثر من
-                        7000 حديث منتقاة بعناية فائقة.
+                        البخاري أصح الأحاديث بعد القرآن الكريم.
                     </p>
 
-                    <!-- Specs -->
-                    <div
-                        class="specs_section"
-                        style="
-                            background-color: #f5f7f6;
-                            padding: 25px;
-                            border-radius: 12px;
-                        "
-                    >
-                        <h3
-                            style="
-                                color: #1a4d3a;
-                                margin-bottom: 15px;
-                                font-size: 18px;
-                            "
-                        >
-                            مواصفات الكتاب
-                        </h3>
+                    <div class="specs_section">
+                        <h3>مواصفات الكتاب</h3>
 
-                        <div
-                            class="specs_grid"
-                            style="
-                                display: flex;
-                                flex-wrap: wrap;
-                                gap: 20px 0;
-                            "
-                        >
-                            <div
-                                class="spec_item"
-                                style="
-                                    flex-basis: 50%;
-                                    display: flex;
-                                    flex-direction: column;
-                                    gap: 5px;
-                                "
-                            >
-                                <span
-                                    class="label"
-                                    style="color: #888; font-size: 13px;"
-                                >
-                                    الناشر
-                                </span>
-                                <span
-                                    class="value"
-                                    style="
-                                        color: #1a4d3a;
-                                        font-weight: 700;
-                                        font-size: 15px;
-                                    "
-                                >
-                                    دار الحديث
-                                </span>
+                        <div class="specs_grid">
+                            <div class="spec_item">
+                                <span class="label">الناشر</span>
+                                <span class="value">دار الحديث</span>
                             </div>
 
-                            <div
-                                class="spec_item"
-                                style="
-                                    flex-basis: 50%;
-                                    display: flex;
-                                    flex-direction: column;
-                                    gap: 5px;
-                                "
-                            >
-                                <span
-                                    class="label"
-                                    style="color: #888; font-size: 13px;"
-                                >
-                                    سنة النشر
-                                </span>
-                                <span
-                                    class="value"
-                                    style="
-                                        color: #1a4d3a;
-                                        font-weight: 700;
-                                        font-size: 15px;
-                                    "
-                                >
-                                    2023
-                                </span>
+                            <div class="spec_item">
+                                <span class="label">سنة النشر</span>
+                                <span class="value">2023</span>
                             </div>
 
-                            <div
-                                class="spec_item"
-                                style="
-                                    flex-basis: 50%;
-                                    display: flex;
-                                    flex-direction: column;
-                                    gap: 5px;
-                                "
-                            >
-                                <span
-                                    class="label"
-                                    style="color: #888; font-size: 13px;"
-                                >
-                                    عدد الصفحات
-                                </span>
+                            <div class="spec_item">
+                                <span class="label">عدد الصفحات</span>
                                 <span class="value">650</span>
                             </div>
 
-                            <div
-                                class="spec_item"
-                                style="
-                                    flex-basis: 50%;
-                                    display: flex;
-                                    flex-direction: column;
-                                    gap: 5px;
-                                "
-                            >
-                                <span
-                                    class="label"
-                                    style="color: #888; font-size: 13px;"
-                                >
-                                    اللغة
-                                </span>
-                                <span
-                                    class="value"
-                                    style="
-                                        color: #1a4d3a;
-                                        font-weight: 700;
-                                        font-size: 15px;
-                                    "
-                                >
-                                    العربية
-                                </span>
+                            <div class="spec_item">
+                                <span class="label">اللغة</span>
+                                <span class="value">العربية</span>
                             </div>
 
-                            <div
-                                class="spec_item full_width"
-                                style="
-                                    flex-basis: 100%;
-                                    display: flex;
-                                    flex-direction: column;
-                                    gap: 5px;
-                                "
-                            >
-                                <span
-                                    class="label"
-                                    style="color: #888; font-size: 13px;"
-                                >
-                                    رقم ISBN
-                                </span>
-                                <span
-                                    class="value"
-                                    style="
-                                        color: #1a4d3a;
-                                        font-weight: 700;
-                                        font-size: 15px;
-                                    "
-                                >
-                                    978-1-234567-89-1
-                                </span>
+                            <div class="spec_item full_width">
+                                <span class="label">ISBN</span>
+                                <span class="value">978-1-234567-89-1</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Price -->
-                    <div
-                        class="price_tag"
-                        style="
-                            background-color: #3b6b55;
-                            color: var(--main-color);
-                            display: flex;
-                            flex-direction: column;
-                            align-items: center;
-                            justify-content: center;
-                            padding: 20px;
-                            border-radius: 10px;
-                            text-align: center;
-                        "
-                    >
-                        <span
-                            class="price_label"
-                            style="font-size: 14px; margin-bottom: 5px; opacity: 0.9;"
-                        >
-                            السعر
-                        </span>
-                        <span
-                            class="price_value"
-                            style="font-size: 32px; font-weight: 800;"
-                        >
-                            180 مصري
-                        </span>
+                    <div class="price_tag">
+                        <span class="price_label">السعر</span>
+                        <span class="price_value">180 مصري</span>
                     </div>
 
-                    <!-- Contact -->
                     <div class="contact_section">
-                        <h3
-                            style="
-                                margin-bottom: 15px;
-                                color: #1a4d3a;
-                                font-size: 18px;
-                                font-weight: 800;
-                            "
-                        >
-                            للطلب أو الاستفسار
-                        </h3>
-
-                        <div
-                            class="contact_methods"
-                            style="display: flex; gap: 15px;"
-                        >
-                            <button class="btn whatsapp" style="background-color: #25d366;
-                            
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            gap: 10px;
-                            padding: 12px;
-                            border: none;
-                            border-radius: 8px;
-                            color: var(--main-color);
-                            font-weight: 700;
-                            font-size: 16px;
-                            cursor: pointer;
-                            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-                            ">
-                                <i data-lucide="whatsapp"></i>
-                                واتساب
-                            </button>
-
-                            <button class="btn messenger" style="background-color: #0084ff; 
-                           
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            gap: 10px;
-                            padding: 12px;
-                            border: none;
-                            border-radius: 8px;
-                            color: var(--main-color);
-                            font-weight: 700;
-                            font-size: 16px;
-                            cursor: pointer;
-                            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-                            ">
-                                <i data-lucide="facebook"></i>
-                                ماسنجر
-                            </button>
-
-                            <button class="btn call" style="    background-color: var(--badge-color);
-                            
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            gap: 10px;
-                            padding: 12px;
-                            border: none;
-                            border-radius: 8px;
-                            color: var(--main-color);
-                            font-weight: 700;
-                            font-size: 16px;
-                            cursor: pointer;
-                            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-                            ">
-                                <i data-lucide="phone"></i>
-                                اتصال
-                            </button>
+                        <h3>للطلب أو الاستفسار</h3>
+                        <div class="contact_methods">
+                            <button class="btn whatsapp">واتساب</button>
+                            <button class="btn messenger">ماسنجر</button>
+                            <button class="btn call">اتصال</button>
                         </div>
                     </div>
 
-                    <!-- Note -->
-                    <div
-                        class="note_box"
-                        style="
-                            background-color: #fff9e6;
-                            padding: 15px;
-                            border-right: 4px solid var(--badge-color);
-                            border-radius: 4px;
-                            font-size: 14px;
-                            line-height: 1.6;
-                            color: #444;
-                        "
-                    >
+                    <div class="note_box">
                         <p>
-                            <strong>ملاحظة :</strong>
-                            يمكنك التواصل معنا عبر أي من القنوات المتاحة أعلاه
-                            لطلب الكتاب أو الاستفسار عن التوفر وطرق الدفع والشحن.
+                            <strong>ملاحظة:</strong>
+                            يمكنك التواصل معنا لطلب الكتاب أو الاستفسار.
                         </p>
                     </div>
                 </div>
 
                 <!-- Book image -->
-                <div class="book_image" >
-                    <img
-                        src="../../assets/available_books/4c03f5ce154c4d1d2c98b9fcbbc2fbbdf9bf7584.jpg"
-                        width="100%"
-                        alt="Book Cover"
-                    />
+                <div class="book_image">
+                    <img src="../../assets/available_books/4c03f5ce154c4d1d2c98b9fcbbc2fbbdf9bf7584.jpg"
+                        alt="Book Cover" />
                 </div>
             </div>
         </section>
@@ -421,4 +136,5 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="../../index.js"></script>
 </body>
+
 </html>
