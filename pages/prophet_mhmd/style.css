@@ -247,62 +247,62 @@
 
 @media (max-width : 992px) {
     #book_review>#container {
-        flex-direction: column !important;
-        align-items: center !important;
-        gap: 40px !important;
+        flex-direction: column-reverse ;
+        align-items: center ;
+        gap: 40px ;
     }
 
     .book_image {
-        max-width: 100% !important;
-        width: 80% !important;
+        max-width: 100% ;
+        width: 80% ;
     }
 
     .book_details {
-        width: 100% !important;
-        text-align: center !important;
+        width: 100% ;
+        text-align: center ;
     }
 
     .header_info,
     .description,
     .specs_section,
     .contact_section {
-        text-align: center !important;
+        text-align: center ;
     }
 
     .description {
-        margin: 0 auto !important;
+        margin: 0 auto ;
     }
 
     .specs_grid {
-        justify-content: center !important;
+        justify-content: center ;
     }
 }
 
 @media (max-width : 768px) {
     .inner_books {
-        flex-direction: column !important;
+        flex-direction: column ;
     }
 
     .contact_methods {
-        flex-direction: column !important;
+        flex-direction: column ;
     }
 
     .header_info h1 {
-        font-size: 32px !important;
+        font-size: 32px ;
     }
 
     .price_value {
-        font-size: 26px !important;
+        font-size: 26px ;
     }
 }
 
 @media (min-width : 768px) and (max-width : 996px) {
     .inner_books {
-        flex-wrap: wrap !important;
+        flex-wrap: wrap ;
     }
 
     .book {
-        width: 45%m !important;
+        width: 45%m ;
     }
 }
 }
