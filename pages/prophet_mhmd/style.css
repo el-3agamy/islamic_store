@@ -245,15 +245,29 @@ section>strong {
 /* responsive  */
 
 @media (max-width : 992px) {
-    #book_review>#container {
+    /* #book_review>#container {
         flex-direction: column !important;
         align-items: center !important;
         gap: 40px !important;
-    }
+    } */
 
-    .book_image {
+    /* #book_review .book_image  {
         max-width: 100% !important;
         width: 80% !important;
+    } */
+#book_review .book_image {
+        order: -1;
+    }
+     #book_review > #container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #book_review .book_image {
+        width: 90%;
+        max-width: 100%;
+        flex: none;
+
     }
 
     .book_details {
@@ -301,6 +315,6 @@ section>strong {
     }
 
     .book {
-        width: 45%m !important;
+        width: 45% !important;
     }
 }
