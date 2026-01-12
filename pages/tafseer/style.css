@@ -18,10 +18,10 @@
 
 
 div section:nth-child(2) {
-    background: linear-gradient(to bottom, var(--first-color-linear-gradient), var(--second-color-linear-gradient));
+    background: linear-gradient(to bottom, var(--first-color-linear-gradient), var(--second-color-linear-gradient)) !important;
     color: var(--main-color);
-    display: flex;
-    flex-direction: column;
+    display: flex !important;
+    flex-direction: column !important;
     row-gap: 20px;
     justify-content: center;
     align-items: center;
