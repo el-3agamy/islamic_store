@@ -54,8 +54,7 @@ section>strong {
 
 /* Book Image Styling */
 #book_review .book_image { 
-    /* flex: 1 ; */
-    max-width: 450px ;
+    width: 100%;
     background: var(--main-color) ;
     padding: 15px ;
     border-radius: 10px ;
@@ -67,18 +66,16 @@ section>strong {
     width: 100%;
     height: auto;
     border-radius: 5px;
-    display: block;
+  
 }
 
 
 #book_review .book_details {
+    width: 100%;
     display: flex;
-    flex: 1.2;
     flex-direction: column;
     gap: 25px;
-    background-color: transparent;
-    /* Override global .book_details if needed */
-    padding: 0 !important;
+    
 }
 
 #book_review .header_info h1 {
