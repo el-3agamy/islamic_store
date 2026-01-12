@@ -256,6 +256,10 @@ section>strong {
     .contact_methods {
         flex-direction: column !important;
     }
+    #container_book_review .book_image{
+        width: 100% !important;
+        display: block !important;
+    }
 }
 
 /* responsive  */
