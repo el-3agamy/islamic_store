@@ -250,6 +250,7 @@
         flex-direction: column-reverse ;
         align-items: center ;
         gap: 40px ;
+        justify-content: center;
     }
 
     .book_image {
