@@ -246,7 +246,7 @@ section>strong {
 
 @media (max-width : 992px) {
     #book_review>#container {
-        flex-direction: column !important;
+        flex-direction: column-reverse !important;
         align-items: center !important;
         gap: 40px !important;
     }
