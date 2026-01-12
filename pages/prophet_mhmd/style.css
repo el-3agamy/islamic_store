@@ -251,7 +251,7 @@ section>strong {
         gap: 40px !important;
     }
 
-    .book_image {
+    #book_review>#container .book_image {
         max-width: 100% !important;
         width: 80% !important;
     }
@@ -296,11 +296,11 @@ section>strong {
 }
 
 @media (min-width : 768px) and (max-width : 996px) {
-    .inner_books {
+   #book_review>#container .inner_books {
         flex-wrap: wrap !important;
     }
 
-    .book {
+    #book_review>#container .book {
         width: 45% !important;
     }
 }
