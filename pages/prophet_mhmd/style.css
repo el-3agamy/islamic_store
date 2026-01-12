@@ -45,7 +45,7 @@ section>strong {
     padding: 60px 0;
 }
 
-#book_review>#container {
+#book_review>#container_book_review {
     display: flex;
     gap: 50px;
     align-items: flex-start;
@@ -240,7 +240,7 @@ section>strong {
 
 
 
-#container {
+#container_book_review {
     width: 100%;
     max-width: 1200px; /* or whatever you want */
     margin-inline: auto;
@@ -263,7 +263,7 @@ section>strong {
     } */
 /* #book_review .book_image {
 } */
-#book_review > #container {
+#book_review > #container_book_review {
     flex-direction: column !important;
     align-items: stretch !important;
 }
