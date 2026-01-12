@@ -1,5 +1,4 @@
-@layer{
-    section>strong {
+section>strong {
     color: var(--main-color);
     background-color: var(--badge-color);
     padding: 10px 20px;
@@ -304,5 +303,4 @@
     .book {
         width: 45%m !important;
     }
-}
 }
