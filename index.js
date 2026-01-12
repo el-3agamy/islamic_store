@@ -14,13 +14,13 @@ if (burgerToggle && navMenu) {
 
 for (let i = 0; i < books.length; i++) {
   books[i].addEventListener('click', function () {
-    location.href = `/pages/prophet_mhmd`;
+    location.href = `/pages/prophet_mhmd/index.html`;
   })
 }
 
 for (let i = 0; i < categories.length; i++) {
   categories[i].addEventListener('click', function () {
-    location.href = `/pages/tafseer`
+    location.href = `/pages/tafseer/index.html`
   })
 }
 
